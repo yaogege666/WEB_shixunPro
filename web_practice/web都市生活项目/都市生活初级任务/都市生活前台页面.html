@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前台页面</title>
+	<script type="text/javascript">
+		
+
+	</script>
+	<style type="text/css">
+*{
+
+	padding: 0;
+	margin: 0;
+}
+
+
+.header_left{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+
+
+}	
+.header_right{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+
+}	
+.top{
+    background: url(images/menu.gif);
+    width: 920px;
+    height: 60px;
+    border:  1px solid white;
+    margin-top: 60px;
+
+}
+.top img{
+   float: left;
+
+
+}
+.top p{
+
+	float: right;
+	color: white;
+
+}
+.main{
+  width: 920px;
+  height: 500px;
+  border: 1px solid white;
+  margin-top: 125px;
+
+
+}
+
+
+
+
+.left{
+
+	width: 300px;
+	height: 350px;
+	border: 1px solid white;
+	float: left;
+
+}
+.left_title{
+    width: 250px;
+    height: 20px;
+    border: 1px solid white;
+    padding-left: 20px;
+
+
+}
+.left_title li{
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+.left_top{
+
+   margin-left: 13px;
+      
+
+}
+.left_title2  {
+	width: 300px;
+	height: 20px;
+	border: 1px solid white;
+	padding-left: 20px;
+
+
+ 
+
+
+}
+.left_title2  ul li{
+    color: blue;
+     font-size: 20px;
+       font-weight: bold;
+
+
+}
+
+
+
+.left_bottom{
+     border: 1px solid white;
+     padding-left: 20px;
+
+
+  
+
+
+}
+
+
+
+
+
+.right{
+    width: 550px;
+    height: 430px;
+    border: 1px solid white;
+    float: right;
+
+
+}
+.right_top{
+     width: 550px;
+     height: 150px;
+     border: 1px solid white;
+
+
+}
+
+
+
+
+.right_top_title{
+	border: 1px solid white;
+	height: 30px;
+    padding-left: 20px;
+    color:blue;
+
+
+
+}
+.right_top_title  ul  li{
+     font-size: 25px;
+     font-weight: bold;
+
+
+}
+.right_top_title  span{
+     font-size: 16px;
+
+}
+.right_main{
+
+	width: 550px;
+	height: 100px;
+	border: 1px solid white;
+	font-size: 10px;
+
+}
+.right_main_left{
+   width: 200px;
+   float: left;
+   height: 96px;border: 1px solid white;
+
+}
+.right_main_left  span{
+    font-weight: bold;
+    font-size: 20px;
+
+
+
+}
+
+.right_main_right{
+   width: 200px;
+   float: right;
+   height: 96px;border: 1px solid white;
+
+}
+.right_main_right  span{
+    font-weight: bold;
+    font-size: 20px;
+
+
+
+}
+.mid{
+	width: 550px;
+	height: 6opx;
+	float: right;
+
+
+}
+.mid  img{
+	width: 550px;
+	float:right;
+	height: 56px;
+
+
+}
+.right_bottom_title{
+	border: 1px solid white;
+	height: 30px;
+    padding-left: 20px;
+    color:blue;
+
+
+
+}
+.right_bottom_title  ul  li{
+     font-size: 25px;
+     font-weight: bold;
+
+
+}
+.right_bottom_title  span{
+     font-size: 16px;
+
+}
+.right_bottom{
+     width: 550px;
+     height: 130px;
+     background: url(images/logon_middle.gif);
+     border: 1px solid white;
+
+}
+.right_bottom_left{
+
+	width: 270px;
+	height: 130px;
+	border: 1px solid gray;
+	float: left;
+}
+.right_bottom_left_title{
+
+   background-color: #3CB371;
+   width: 270px;
+   height: 20px;
+   font-weight: bold;
+   font-size: 18px;
+   color: white;
+
+
+}
+.right_bottom_left_main{
+   width: 270px;
+   height: 108px;
+   float: left;
+   font-size: 15px;
+
+
+
+}
+.right_bottom_left_main  span{
+     position: absolute;
+     right: 340px;
+     top: 620px;
+
+
+}
+
+
+
+
+
+
+
+
+.right_bottom_right{
+
+	width: 270px;
+	height: 130px;
+	border: 1px solid gray;
+	float: right;
+
+}
+.right_bottom_right_title{
+    background-color: #3CB371;
+   width: 270px;
+   height: 20px;
+   font-weight: bold;
+   font-size: 18px;
+   color: white;
+        
+
+
+
+}
+.right_bottom_right_main{
+   width: 270px;
+   height: 108px;
+   float: right;
+      font-size: 15px;
+   
+
+
+}
+.right_bottom_right_main  span{
+     position: absolute;
+     right: 90px;
+     top: 620px;
+
+
+}
+
+
+
+
+
+
+
+
+.bottom{
+
+     background: url(images/menu.gif);
+      width: 920px;
+    height: 60px;
+    float: left;
+
+
+
+}
+
+	</style>
+</head>
+<body>
+<div  class="header_left">
+	[发布信息]<a href="都市生活后台页面.html">[进入后台]</a>
+</div>
+<div  class="header_right">
+<p>设为主页 - 收藏本页 - -联系我们</p>	
+
+</div>
+<div  class="top" >
+<img src="images\logo.gif">
+<p>首页 &nbsp&nbsp   暂时没有信息 &nbsp招聘信息&nbsp &nbsp培训信息&nbsp&nbsp   房屋信息 &nbsp&nbsp  求购信息</p><br/><br/>
+
+<p>招商投资 &nbsp&nbsp   公寓信息&nbsp&nbsp    求职信息&nbsp&nbsp   家教信息&nbsp&nbsp   车辆信息&nbsp&nbsp   出售信息&nbsp&nbsp&nbsp&nbsp寻找启示</p>
+<img src="images\pcard1.jpg">
+
+
+</div>
+<div  class="main">
+	<div  class="left">
+
+	<div class="left_title">
+
+	<ul  type="square">
+		<li>日历</li>
+
+	</ul>
+    </div>
+    <div   class="left_top">
+    	
+<img src="images\rili.png">
+    </div>
+
+  <div   class="left_title2">
+  	<ul   type="square">
+  		<li>信息快速搜索</li>
+  	</ul>
+
+  </div><br/>
+  <div  class="left_bottom">
+  	关键字：<input type="text" name="" size="20"><br/><br/>
+  	<form>条件：<select  name="" ><option >--请选择<--</option></select></form><br/>
+  	搜索类型：<input type="radio" name="">全字匹配</input><br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="">模糊搜索</input>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  	<input type="button" name="" value="搜索"> 
+
+
+
+
+  </div>
+
+
+s
+	
+
+
+
+	</div>
+
+	<div  class="right">
+	<div class="right_top">
+	<div   class="right_top_title">
+		   <ul   type="square">
+		   	<li>推荐信息<span>[缴费专区]</span></li>
+		   </ul>
+
+
+	</div><br/>
+	<div   class="right_main">
+
+     <div  class="right_main_left" >
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+
+
+
+     </div>
+     <div   class="right_main_right">
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+     	<span>[求职信息]</span>&nbsp求职信息标准<br  />
+
+     </div>
+	</div>
+	</div>
+	
+<div  class="mid">
+	<img src="images\pcard2.jpg">
+</div><br  />
+
+
+
+
+<div   class="right_bottom_title">
+		   <ul   type="square">
+		   	<li>最新信息<span>[免费专区]</span></li>
+		   </ul>
+
+
+	</div><br/><br/><br/>
+	<div  class="right_bottom">
+	<div class="right_bottom_left" >
+		<div  class="right_bottom_left_title">
+			调试信息
+		</div>
+
+		<div   class="right_bottom_left_main">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			发布培训信息标题<span>更多....</span>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="right_bottom_right">
+		
+		<div  class="right_bottom_right_title">
+			求职信息
+		</div>
+			<div   class="right_bottom_right_main">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			发布培训信息标题<span>更多....</span>
+		</div>
+
+
+
+	</div>
+		
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	<div   class="bottom">
+		
+
+	</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+	
+</body>
+</html>

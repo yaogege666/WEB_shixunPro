@@ -1,0 +1,25 @@
+﻿body{background-attachment:fixed ;   
+}
+#main{border:3px black;
+margin-left:30%;
+margin-top:12%;
+
+}
+#top{height:96px;  
+width:545px;
+background-image:url(../images/logon_top.gif);
+}
+#middle{height:160px;  
+width:545px;
+background-image:url(../images/logon_middle.gif);
+padding-top: 60px;
+}
+#end{
+height:14px;
+width:545px;
+background-repeat:no-repeat;
+text-align:center;
+line-height:20px;
+margin-top:-45px;
+margin-left:65px;
+}

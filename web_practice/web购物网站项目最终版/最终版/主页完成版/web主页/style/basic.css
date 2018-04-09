@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	height:100%;
+	width:100%;
+	position: absolute;
+}
+header{
+	position: relative;
+	background-color:#5e6470;
+	height: 15%;
+	max-height: 80px;
+}
+header div.header_title{
+	color:#fff;
+	font-size:16px;
+	margin: -60px 300px;
+}
+header div.header_img{
+	padding: 20px 180px;
+}
+header div.header_img img{
+	max-width: 65px;
+	min-width: 40px;
+	width: 80%;
+}
+nav{
+	position: relative;
+	height: 70%;
+	max-height: 500px;
+	background: url("../images/new.jpg")  no-repeat scroll ;
+	background-size:100% 420px;
+	padding:1px;
+}
+nav div.nav_login div.nav_top{
+	width:350px;
+	height:85px;
+	background: #fff none repeat scroll 0% 0%;
+	margin: -20px 0 0 68%;
+	border-radius: 4px 4px 0px 0px;
+	box-shadow:2px 2px 10px #43474B;
+}
+nav div.nav_login div.nav_top div.nav_top_title{
+	font-size:24px;
+    color: #686868;
+    text-align: center;
+    padding-top: 20px;
+}
+nav div.nav_login div.nav_main{
+	width: 350px;
+	height: 350px;
+	background: #F1F5F0  no-repeat scroll 0% 0%;
+	margin: 0px 0 0 68%;
+	border-radius: 0 0 4px 4px;
+ 	box-shadow:2px 2px 10px #43474B;
+}
+nav div.nav_login div.nav_main form{
+	width:250px;
+	margin:0 auto;
+	padding-top:35px;
+}
+nav div.nav_login div.nav_main form ul{
+	list-style:none;
+}
+nav div.nav_login div.nav_main form ul li{
+	width:300px;
+	height:45px;
+}
+nav div.nav_login div.nav_main form ul li label{
+	font-size:14px;
+	color:#29282A;
+}
+nav div.nav_login div.nav_main form ul li input{
+	height:25px;
+	border-radius: 4px;
+	border: 1px solid #D8D8D8;
+}
+nav div.nav_login div.nav_main form ul li input:focus
+{
+	border-color:#0A8CB0;
+	background:#E7E7F0;
+}
+nav div.nav_login div.nav_main form ul li a{
+	font-size:12px;
+	color:#00F;
+	text-decoration:none;
+}
+nav div.nav_login div.nav_main form ul li a:hover{
+	color:orange;
+	text-decoration:underline;
+}
+nav div.nav_login div.nav_main form ul li a.re{
+	margin-left:100px;
+}
+nav div.nav_login div.nav_main form ul li a.forget{
+	margin-left:20px;
+}
+nav div.nav_login div.nav_main form ul li input.bn{
+	display: inline-block;
+	width: 32%;
+	max-width: 220px;
+	min-width: 150px;
+	padding: 8px 12px;
+	border: medium none;
+	margin: 10% auto;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #FFF;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #AAA;
+	background-image: -moz-linear-gradient(center top , #568029, #0E5A2B);
+	position: relative;
+	height: 40px;
+	margin-left: 20%;
+}
+nav div.nav_login div.nav_main form ul li input.bn:active{
+	box-shadow:none;
+	background-image:linear-gradient(top, #0e5a2b,#568029);
+	background-image:-moz-linear-gradient(top, #0e5a2b,#568029);
+	background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0e5a2b), to(#568029));
+	top:2px;
+}
+footer{
+	width:100%;
+	height:10%;
+	max-height:80px;
+	text-align:center;
+	background:#fff;
+}
+footer div.footer_page{
+	text-align:center;
+	font-size:12px;
+	height:70%;
+	color:#787878;
+	line-height: 30px;
+	margin-top: 0px;
+}
+footer div.image{
+	width:50px;
+	height:50px;
+	margin-left: 32%;
+	margin-top: -30px;
+}
+footer div.image img{
+	width:50px;
+}

@@ -1,0 +1,365 @@
+<!--
+		增加上边导航栏三角号的转换js
+		修改本页面的三角号处的标签，增加需要的id值
+		
+		增加表单验证的js
+
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<link href="my.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" type="text/css" href="style/shop_nav.css">
+	<link rel="stylesheet" type="text/css" href="style/checkout.css">
+	<script type="text/javascript" src = "js/shop_js.js"></script>
+	<script type="text/javascript" src = "js/tfinput.js"></script>
+	<title>购物车--随你便</title>
+</head>
+<body>
+<nav>
+	<div class="nav_ul">
+		<div class="nav_right">
+			<div class="img">
+				<span></span>
+				<a href="###">
+					收藏随你便
+				</a>
+			</div>
+			<div class="page">
+				<span>| 欢迎光临随你便，请: <a href="###">登录</a>　<a href="###">免费注册</a></span>
+			</div>
+		</div>
+		<div class="left">
+			<div class="left_page">
+				<div class="sp1"></div>
+				<div class="sp2"><a href="###">购物车</a><span>(1)</span></div>
+			</div>
+			<ul class="ul1">
+				<li class="page_1" id="top_control_1">
+					<a id="top_1_1">我的随你便▼</a>
+					<ul><!-- 里面的div用来设置样式，外面的ul是用padding挤的，这样可以实现：hover伪类和mouseover时间 -->
+						<div>
+							<li><a href="###">我的订单</a></li>
+							<li><a href="###">我的收藏</a></li>
+							<li><a href="###">礼券/礼品卡</a></li>
+							<li><a href="###">我的评论</a></li>
+							<li><a href="###">我的积分</a></li>
+							<li><a href="###">我的余额</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<a href="###">手机随你便</a>
+				</li>
+				<li  id="top_control_2">
+					<a id="top_1_2">企业采购▼</a>
+					<ul>
+						<div>
+							<li><a href="<###">大宗采购</a></li>
+							<li><a href="###">礼品卡采购</a></li>
+							<li><a href="###">礼品卡激活</a></li>
+							<li><a href="###">礼品卡激活</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>
+					<a href="###">我的数字架</a>
+				</li>
+				<li  id="top_control_3">
+					<a id="top_1_3">客户服务▼</a>
+					<ul>
+						<div>
+							<li><a href="###">帮助中心</a></li>
+							<li><a href="###">自助客服</a></li>
+							<li><a href="###">邮件客服</a></li>
+							<li><a href="###">微博客服</a></li>
+							<li><a href="###">电话客服</a></li>
+							<li><a href="###">我要投诉</a></li>
+							<li><a href="###">一件建议</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="###">顾客体验中心</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<section>
+	<div class="title">
+		<a href="index.html"><img src="images/logo.jpg"></a>
+		<div class="main_p">
+			<strong>填写订单</strong>
+			<div class="cont">
+				<ul>
+					<li class="li1">
+						1、我的购物车
+					</li>
+					<li class="li2">
+						2、填写订单
+					</li>
+					<li class="li3">
+						3、完成订单
+					</li>
+				</ul>
+			</div>
+			<div class="btn">
+				<a href="shop.html">
+					返回修改购物车
+				</a>
+			</div>
+		</div>
+	</div>
+	<h3>
+		收货相关信息
+	</h3>
+	<div class="main">
+		<div class="main_1">
+			<h4>收货地址</h4>
+			<div class="main_1_1">
+				<ul>
+					<li>
+						<form action="" method="post">
+							<div class="ul_form1 ul_form">
+								<label for="input1"><strong>*</strong>收 &nbsp;货  &nbsp;人：</label>
+								<input id="input1" class="input1" type="text" name="username">
+							</div>
+							<div class="ul_form2 ul_form">
+								<label for=""><strong>*</strong>收货地区：</label>
+								<select class="se1">
+									<option value="china">中国</option>
+									<option value="er">阿尔及利亚</option>
+									<option value="gen">阿根廷</option>
+									<option value="qiu">阿联酋</option>
+									<option value="ji">埃及</option>
+									<option value="ai">爱尔兰</option>
+									<option value="di">奥地利</option>
+									<option value="ao">澳大利亚</option>
+									<option value="ji">巴基斯坦</option>
+									<option value="ma">巴拿马</option>
+									<option value="xi">巴西</optgroup>
+									<option value="bao">白俄罗斯option>
+								option value="bao">保加利亚option>
+								option value="bi">比利时option>
+								</select>
+								<select class="se2">
+									<option value="none">请选择</option>
+									<option value="jing">北京</option>
+									<option value="tian">天津</option>
+									<option value="he">河北</option>
+									<option value="xi">山西</option>
+									<option value="nei">内蒙古</option>
+									<option value="liao">辽宁</option>
+									<option value="ji">吉林</option>
+									<option value="hei">黑龙江</option>
+									<option value="shang">上海</option>
+									<option value="su">江苏</option>
+									<option value="zhe">浙江</option>
+									<option value="ab">安徽</option>
+									<option value="fu">福建</option>
+								</select>
+								<select class="se3">
+									<option value="none">请选择</option>
+								</select>
+								<select class="se4">
+									<option value="none">请选择</option>
+								</select>
+								<a href="###">查看可货到付款地区</a>
+							</div>
+							<div class="ul_form3 ul_form">
+								<label for="input3"><strong>*</strong>详细地址：</label>
+								<input id="input3" class="input3" type="text" name="id">
+							</div>
+							<div class="ul_form4 ul_form">
+								<label for="input4"><strong>*</strong>邮政编码：</label>
+								<input id="input4" class="input4" type="text" name="bianma">
+							</div>
+							<div class="ul_form5 ul_form">
+								<label for="input5"><strong>*</strong>手　　机：</label>
+								<input id="input5" class="input5" type="text" name="phone">
+								<label for="input6">　或　固定电话：</label>
+								<input id="input6" class="input6" type="text" name="telphone">
+							</div>
+							<div class="ul_form7 ul_form">
+								<label for="input7">
+									<input id="input7" class="input7" type="checkbox" name="checkbox"><span>设为默认地址</span>
+								</label>
+							</div>
+						</form>
+						<div class="btn" id = "ifRight">
+							确认收货地址
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_2">
+			<h4>送货方式</h4>
+			<div class="main_2_1">
+				<div class="main_2_1_1">
+					<div class="title">
+						<span>订单1</span>
+					</div>
+					<div class="main1">
+						<ul>
+							<li class="li1">送货方式</li>
+							<li class="li2">详细运费</li>
+							<li class="li3">运费标准</li>
+						</ul>
+					</div>
+					<div class="main2">
+						<ul>
+							<li>
+								<label class="radio" for="1">
+										<input type="radio" id="1" value="1"  checked="checked">
+										<span>普通快递送货上门</span>
+								</label>
+								<select>
+									<option>请选择</option>
+									<option value="2">时间不限</option>
+									<option selected="selected" value="1">只工作日送</option>
+									<option value="3">只双休日、假期送</option>
+								</select>
+								<span class="s1">免运费</span>
+								<span class="s2">每张订单不满80.00元,运费5.00元, 订单80....</span>
+							</li>
+						</ul>
+						<div class="btn" id = "skip1">确认送货方式</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_3">
+			<h4>支付方式<a href="###">修改</a></h4>
+			<div class="main_3_1">
+				<span>订单1：网上支付</span>
+			</div>
+		</div>
+		<div class="main_4">
+			<h4>发票信息<a href="###">收起</a></h4>
+			<div class="main_4_1">
+				<div class="title">
+					<span>订单1：</span>
+				</div>
+				<div class="main_4_1_1">
+					<ul>
+						<li class="li1">
+							<label class="radio" for="1">
+								<input type="radio" id="2" value="2"  checked="checked">
+								<span>普通发票（纸质）</span>
+							</label>
+						</li>
+						<li class="li2">
+							<label for="input1">发票抬头：</label>
+							<input type="radio" id="3" value="3" name="1"  checked="checked">
+							<span>个人</span>
+							<input type="radio" id="4" value="4" name="1">
+							<span>单位</span>
+						</li>
+						<li class="li3">
+  							<label for="input1">发票内容：</label>
+							<select>
+								<option value="5">请选择</option>
+								<option value="6">食品</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="main_4_1_2">
+					<p>您订购的商品由当当合作卖家销售，发票由卖家开具并寄出</p>
+				</div>
+				<div class="main_4_1_3">
+					<div class="btn1" id = "skip2">确认发票信息</div>
+					<div class="btn2"><a href="###">暂不需要发票</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ml">
+		<h3>订单1(中闽天天纸飞机旗舰店配送)</h3>
+		<div class="ml_main">
+			<div class="ml_title">
+				<ul>
+					<li class="li1">商品名称</li>
+					<li class="li2">当当价</li>
+					<li class="li3">促销价</li>
+					<li class="li4">数量</li>
+					<li class="li5">小计</li>
+					<li class="li6">操作</li>
+				</ul>
+			</div>
+			<div class="ml_item">
+				<ul>
+					<li class="li1">中闽天天纸飞机旗舰店 特级 ...</li>
+					<li class="li2">¥90.00(5折)</li>
+					<li class="li3">- -</li>
+					<li class="li4">1</li>
+					<li class="li5">¥90.00</li>
+					<li class="li6"><a href="shop/html">放回购物车</a></li>
+				</ul>
+			</div>
+			<div class="ml_fo1">
+				<span class="s1">运费：</span>
+				<span>免运费</span>
+			</div>
+			<div class="ml_fo2">
+				<span class="s1">小计总额：</span>
+				<span>¥79.90</span>
+			</div>
+			<div class="ml_page">
+				<span>给商家留言：</span>
+				<textarea style="overflow-x:hidden" rows="1" cols="48" name=""></textarea>
+				<span> 0/200</span>
+			</div>
+		</div>
+	</div>
+	<div class="fo">
+		<div class="fo_left">
+			<div class="left1 left">
+				<a href="###"></a>
+				<span>余额</span>
+			</div>
+			<div class="left2 left">
+				<a href="###"></a>
+				<span>礼品卡</span>
+			</div>
+			<div class="left3 left">
+				<a href="###"></a>
+				<span>积分</span>
+			</div>
+			<div class="left4 left">
+				<a href="###"></a>
+				<span>优惠码</span>
+			</div>
+			<div class="left5 left">
+				<a href="###"></a>
+				<span>礼券</span>
+				<span class="s1">此订单暂无可用的礼券</span>
+			</div>
+		</div>
+		<div class="fo_right">
+			<div class="page">
+				<p class="p1">
+
+商品金额：¥90.00
+</p>
+				<p class="p2">
+
+*应付总额(含运费)：<span>¥79.90</span>
+</p>
+			</div>
+			<div class="btn_end">
+				<a href="dingdan.html">提交订单</a>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<hr>
+	<div class="page">
+	<p>
+Copyright (C) 当当网 2004-2014</p><p>京ICP证041189号出版物经营许可证 新出发京批字第直0673号
+</p></div>
+</footer>
+</body>
+</html>

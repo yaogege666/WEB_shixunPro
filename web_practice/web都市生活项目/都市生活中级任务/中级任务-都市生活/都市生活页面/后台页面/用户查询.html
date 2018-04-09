@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
+<script type="text/javascript"> 
+
+window.onload=function(){
+	$(".a1"). click(function(){  $(".b1").hide();  });
+	$(".a2"). click(function(){  $(".b2").hide();  });
+	$(".a3"). click(function(){  $(".b3").hide();  });
+	$(".a4"). click(function(){  $(".b4").hide();  });
+	$(".a5"). click(function(){  $(".b5").hide();  });
+}
+</script>
+</head>
+<body>
+<table height="300" width="550">
+<tr><th>用户id</th><th>用户名</th><th>操作</th></tr>
+<tr align="center" class="b1"><td  >2014</td><td>admin</td><td> 修改|<div class="a1" style="display:inline;">删除</div></td></tr>
+<tr align="center" class="b2"><td >2015</td><td>a2015</td><td  >修改|<div class="a2" style="display:inline;">删除</div></td></tr>
+<tr align="center" class="b3"><td >2016</td><td>a2016</td><td  >修改|<div class="a3"style="display:inline;" >删除</div></td></tr>
+<tr align="center" class="b4"><td >2017</td><td>a2017</td><td  >修改|<div class="a4" style="display:inline;">删除</div></td></tr>
+<tr align="center" class="b5"><td >2018</td><td>a2018</td><td  >修改|<div class="a5" style="display:inline;" >删除</div></td></tr>
+<tr><td>&nbsp </td><td align="right"> 上一页|下一页</td><td></td></tr>
+</table>
+
+</body>
+</html>

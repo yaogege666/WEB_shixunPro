@@ -1,0 +1,206 @@
+<html> 
+<head> 
+<title>用户登录</title> 
+
+<script  language="javavscript" type="text/javascript" >
+function isNull(str){
+if(str==""||str==null)
+return 1;
+}
+
+function validateAndSubmit(){
+var user = form1.user.value;
+var pass = form1.pass.value;
+var pass1=form1.pass1.value;
+var date=form1.date.value;
+
+ah=document.getElementsByName("xl");
+str="用户信息："+"\n";
+str+="用户名："+user+"\n";
+str+="口令："+pass+"\n";
+str+="出生日期："+date+"\n";
+for(i=0;i<ah.length;i++){
+if(ah[i].checked==true){
+str+="学历："+ah[i].value+"\n";
+}
+}
+
+index=city.selectedIndex;
+hometown=city.options[index].text;
+str+="地区："+hometown+"\n";
+
+str+="备注："+document.getElementById('bz').value;
+alert(str);
+document.form1.submit();
+window.location="checkbox.html"
+}
+
+
+function minLength(str	,length){
+if(str.length<length)
+return 1;
+else return 0;
+}
+
+function maxLength(str,length){
+if(str.length>length)
+return 1;
+else return 0;
+}
+
+
+function isDate(str)
+{
+var r = str.match(/^(\d{1,4})(-|\/)(\d{1,2})\2(\d{1,2})$/);
+if(r==null)return false;
+var d= new Date(r[1], r[3]-1, r[4]);
+return (d.getFullYear()==r[1]&&(d.getMonth()+1)==r[3]&&d.getDate()==r[4]);
+}
+
+
+function isValidate()
+{
+var user = document.form1.user.value;
+var pass = document.form1.pass.value;
+var pass1=document.form1.pass1.value;
+var date=document.form1.date.value;
+var str;
+var length;
+
+if(isNull(user))
+{
+alert("用户名不能为空!");
+return ;
+}
+
+else if(minLength(user,2)){
+alert("用户名长度小于2位！");
+return ;
+}
+else if(maxLength(user,10)){
+alert("用户名长度大于10位！");
+return ;
+}
+
+
+
+
+ else if(isNull(pass))
+{
+alert("口令不能为空!");
+return ;
+}
+
+else if(minLength(pass,2)){
+alert("口令不能小于2位！");
+return ;
+}
+else if(maxLength(pass,10)){
+alert("口令不能大于10位！");
+return ;
+}
+
+
+else if(isNull(pass1)){
+alert("请确认口令！");
+
+return;
+}
+ else if(pass!=pass1){
+alert("两次口令不一致！");
+form1.pass1.focus();
+return;
+}
+
+else if(isNull(date))
+{
+alert("请输入您的出生日期!");
+form1.date.focus();
+return ;
+}
+
+else if(!isDate(date)){
+alert("日期格式错误！");
+form1.date.focus();
+return ;
+}
+
+else  
+{
+//Datesubmit();
+validateAndSubmit();
+}
+
+}
+
+function forwardselectTest(){
+window.location="select.html"
+}
+
+</script>
+</head> 
+<body> 
+<table align="center" border="1" width="800">
+<form action="javascript:check()"  method="post" name="form1" > 
+<tr><th align="center" colspan="2">请注册</th></tr>
+<tr><td  width="90">
+用户名：
+</td><td colspan="2">
+<input type="text" name="user" style="width: 280px" /> 2-10位
+</td></tr>
+<tr><td width="90">
+口令：
+</td><td colspan="2">
+<input type="password" name="pass" style="width: 280px" />2-10位,不能与用户名相同。
+</td></tr>
+
+<tr><td width="90">
+确认口令：
+</td><td colspan="2">
+<input type="password" name="pass1"  style="width: 280px" /> 
+</td></tr>
+
+<tr><td width="90" >
+<label>生日:
+</label></td>
+<td colspan="2">
+<input type="text"   name=" date" id="date" />
+</td></tr><tr>
+<td >
+<label>学历:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;</td>
+<td colspan="2">
+<input type="radio" name="xl" value="专科">专科</input>
+<input type="radio" name="xl"  value="本科">本科</input>
+<input type="radio" name="xl"  value="硕士研究生">硕士研究生</input>
+<input type="radio" name="xl"  value="博士研究生">大学</input>
+</label></td>
+</tr>
+<tr><td>
+<label>地区:
+</label>
+</td>
+<td colspan="2">
+<select name="city" id="city">
+<option />东北
+<option />山东
+<option />河北
+<option />江西
+</select>
+</label>
+</td>
+</tr>
+<tr><td><label >
+备注：
+</td><td>
+<textarea id ="bz" rows="5" cols="60"></textarea></td><p>
+</tr>
+<tr>
+<td ><input type="reset" name="reset"  value="重置"/> </td>
+<td><input type="button"   name="login" value="提交并进行checkbox测试"  style="width: 200px"  onclick="isValidate()"/ >
+<input type="button" value="select测试"  onclick="forwardselectTest()"/></td>
+</tr>
+</form> 
+</table>
+</body> 
+</html>

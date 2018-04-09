@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全选_全不选_反选</title>
+</head>
+<script type="text/javascript">
+
+    //总体思路：首先获取所有需要用到的节点，然后为三个按钮各自绑定单击事件，最后通过事件处理函数中的for循环实现所有节点checked属性的更改，从而实现三种不同的需求。
+    window.onload = function () {
+        //获取所有的多选框、获取三个按钮
+        var books = document.getElementsByName("book"),
+            checkAll = document.getElementById("checkAll"),
+            checkNone = document.getElementById("checkNone"),
+            checkReverse = document.getElementById("checkReverse");
+        //check函数为下面的checkAll函数和checkReverse函数提供服务，
+        //通过后者提供的flag，用for循环实现为所有books节点的cheked属性的赋值
+        function check(flag) {
+            for (var i = 0,len = books.length; i < len; i++) {
+                books[i].checked = flag;
+            }
+        }
+        //全选
+        checkAll.onclick = function () {
+            check(true);
+        }
+        //全不选
+        checkNone.onclick = function () {
+            check(false);
+        }
+        //反选
+        checkReverse.onclick = function () {
+            for (var i = 0,len = books.length; i < len; i++) {
+                books[i].checked = !books[i].checked;//将属性值取非。其实就是下面几行代码的简化
+                // if(books[i].checked===true){
+                //  books[i].checked="";
+                // }else{
+                //  books[i].checked="checked";
+                // }
+            }
+        }
+
+    }
+
+</script>
+<body>
+你喜欢的前端开发书籍：<br>
+<input type="checkbox" name="book" id="chk1"><label for="chk1">JavaScript高级程序设计</label>
+<input type="checkbox" name="book" id="chk2"><label for="chk2">锋利的jQuery</label>
+<input type="checkbox" name="book" id="chk3"><label for="chk3">HTML权威指南</label>
+<input type="checkbox" name="book" id="chk4"><label for="chk4">JavaScript语言精粹</label>
+<br>
+<button id="checkAll">全选</button>
+<button id="checkNone">全不选</button>
+<button id="checkReverse">反选</button>
+
+<!-- attentions:
+    1.避免将onclick写成onClick(需知：JS中标识符是区分大小写的)
+    2.当发现自己的JS代码中出现大量重复代码，可以考虑将它们封装成函数 -->
+</body>
+</html>

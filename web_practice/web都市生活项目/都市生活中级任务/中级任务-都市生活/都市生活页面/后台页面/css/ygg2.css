@@ -1,0 +1,261 @@
+.wrap{
+	width: 970px;
+	margin: 0 auto;
+}
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color: red;
+}
+img,input{
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline-style: none;
+	display: block;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}    /*clearfix清除浮动闭合容器(after和before)  处理方法如左边代码所示
+  clear；both同样也是清清除浮动的简洁办法
+*/
+
+
+
+/* 头部 */
+.head{
+	position: relative;
+}
+.photo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.photo .index{
+	float: left;
+	padding-right: 3px;
+}
+.photo .exit{
+	float: right;   /*复合选择器*/
+}
+
+/* 头部线 */
+.line{
+	margin-top: 5px;
+	background-color: #D3D3D3;
+	height: 8px;
+	margin-bottom: 1px;
+}
+/* 主体*/
+.main{
+	position: relative;
+}
+/* 左边*/
+.left {
+	position: relative;
+	float: left;
+	width: 690px;
+}
+.text{
+	position: absolute;
+	display: block;
+	right: 258px;
+	top: 210px;
+	font-size: 16px;
+	font-weight: 600;
+
+}
+iframe{
+background:white;
+border:2px black;
+float:left; 
+margin-left:-924px;
+margin-top:-80px;
+}
+/* 右边*/
+.right{
+	float: right;
+}
+.right .background{
+	width: 256px;
+	height: 748px;
+	background-color:#EBEBEB;
+	padding: 5px 12px 0 12px;
+}
+.background p{
+	text-align: center;
+}
+/* 用户*/
+.right .user{
+	margin-top: 10px;
+}
+.right .user .guanli{
+	background: #F0F0F0;
+	height: 30px;
+	line-height: 30px;
+}
+.right .user h3{
+	padding-left: 16px;
+	color: #004790;
+}
+
+/* 用户管理*/
+.right .search{
+	padding: 10px 15px 0 15px;
+	background: white;
+	position: relative;
+	height: 68px;
+}
+.right .search .input{
+	padding-top: 10px;
+	position: relative;
+	height: 30px;
+	width: 256px;
+}
+.right .search .chaxun{
+	cursor: pointer;
+	float: left;
+	height: 22px;
+	margin-left: 10px;
+	background: #EBEBEB;
+	padding: 6px 8px;
+	width: 20%;
+}
+.right .search .txt-search{
+	float: left;
+	border: 1px solid #E3E9EF;
+	border-radius: 3px;
+	margin-left: 5px;
+	height: 20px;
+	width: 60%;
+
+}
+
+/* 显示方式*/
+.right .show .title{
+	background: #F0F0F0;
+	height: 30px;
+	line-height: 30px;
+}
+.right .show h3{
+	padding-left: 16px;
+	color: #004790;
+}
+.right .status{
+	padding: 10px 15px 10px 15px;
+	background: white;
+	position: relative;
+}
+.right .status .status1,.right .status .status2{
+	padding: 12px 0;
+	position: relative;
+}
+.right .status .status1 input,.right .status .status2 input{
+	display: inline;
+}
+.right .status .status1 li,.right .status .status2 li{
+	float: left;
+	width: 60px;
+}
+
+
+/* 信息类别*/
+.message{
+	background: #D3D3D3;
+	height: 55px;
+	padding-left: 2px;
+	padding-top: 5px;
+
+}
+.message select{
+	margin-left: 15px;
+}
+.message input{
+	background: #EDEDED;
+	cursor: pointer;
+	padding: 6px 8px;
+	margin-top: 5px;
+}
+
+/* 付费方式*/
+.right .pay-set{
+	padding-top: 10px ;
+	background: white;
+	position: relative;
+	height: 110px;
+}
+.right .pay-set .title{
+	background: #F0F0F0;
+	height: 30px;
+	line-height: 30px;
+}
+.right .pay-set h3{
+	padding-left: 16px;
+	color: #004790;
+}
+.right .pay-set form{
+	position: relative;
+	padding: 10px 12px 0 12px;
+}
+.right .pay-set .txt{
+	margin-top: 10px;
+	border: 1px solid #E3E9EF;
+	border-radius: 3px; 
+	float: left;
+	width: 150px;
+	height: 24px;
+}
+.right .pay-set .chaxun{
+	margin-top: 10px;
+	float: right;
+	margin-right: 20px;
+	padding: 6px 6px;
+	height: 24px;
+	cursor: pointer;
+}
+/* 日历 */
+.right .calendar .title{
+	background: #F0F0F0;
+	height: 30px;
+	line-height: 30px;
+}
+.right .calendar h3{
+	padding-left: 16px;
+	color: #004790;
+}
+.right .calendar .img{
+	background: white;
+}
+.right .calendar img{
+	margin: 0 auto;
+}
+
+/* 底部线 */
+.footer-line{
+	background-color: #D3D3D3;
+	height: 8px;
+	margin-bottom: 1px;
+}
+.footer{
+	width: 970px;
+	background: url("../images/end.jpg") ;
+	height: 20px;
+}

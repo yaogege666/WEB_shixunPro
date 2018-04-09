@@ -1,0 +1,292 @@
+nav{
+	width:100%;
+	height:378px;
+}
+nav div.nav_title{
+	width:90%;
+	max-height: 350px;
+	height: 78%;
+	background-size:100% 100%;
+	margin:0 auto;
+}
+nav div.nav_title img{
+	width:100%;
+	height:100%;
+}
+nav div.nav_banner{
+	width:100%;
+	height:35px;
+	background-color: #F9F9F9;
+	border-bottom: 1px solid #F2F2F2;
+	display:inline-block;
+	font: 12px "Hiragino Sans GB","simsun","Arial";
+	color: #646464;
+}
+nav div.nav_banner div.banner_left{
+	width:91px;
+	height:28px;
+	margin-top: 0.8%;
+    position: relative;
+    margin-left: 7%;
+}
+nav div.nav_banner div.banner_left select{            ////新加
+	width: 100px;
+	height: 20px;
+	color: #646464;
+	position: relative;
+	top: -16px;
+	left: 40px;
+}
+nav div.nav_banner div.banner_right{
+	height:35px;
+	width:74%;
+	display:inline-block;
+	float:right;
+	margin-top:-2.8%;
+	position: relative;
+	left: 20px;
+}
+nav div.nav_banner div.banner_right a{
+		text-decoration:none;
+		color:#666;
+}
+nav div.nav_banner div.banner_right a span{
+	color:#CE1825;
+}
+nav div.nav_banner div.banner_right a:hover{
+	color:#CE1825;
+}
+nav div.nav_banner div.banner_right div.banner_a a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+}
+nav div.nav_banner div.banner_right div.banner_a a:hover{
+	color:#FF2832;
+}
+nav div.nav_banner div.banner_right div.banner_shop{
+	margin-left:190px;
+	margin-top:-35px;
+}nav div.nav_banner div.banner_right div.banner_shop i{
+	float: left;
+	width: 15px;
+	height: 14px;
+	background: transparent url("../images/nav_shop.png") no-repeat scroll 48% 85%;
+	overflow: hidden;
+	margin: 7px 9px 0px 0px;
+	position: relative;
+	left: 10px;
+}
+nav div.nav_banner div.banner_right div.banner_shop a{
+	top: 8px;
+	position: relative;
+	left: 7px;
+}
+nav div.nav_banner div.banner_right div.banner_shop span{
+	color: red;
+	top: 8px;
+	position: relative;
+	margin-left: 5px;
+	font-weight: bold;
+	left: 4px;
+}
+nav div.nav_banner div.banner_right div.banner_a{
+	margin-left:270px;
+	top: -6px;
+	position: relative;
+}													
+nav div.nav_banner div.banner_right div.banner_logo{
+	margin-left:788px;
+	top: -25px;
+	position: relative;
+	left:10px;
+}
+nav div.nav_banner div.banner_right div.banner_logo span{
+	color:#CE1825;
+	top: -8px;
+	position: relative;
+}
+nav div.search{
+	max-height:100px;
+	height:26%;
+	width:100%;
+}
+nav div.search div.search_left{
+	max-width:220px;
+	width:17%;
+}
+nav div.search div.search_left img{
+	width:100%;
+	margin-left:45%;
+}
+nav div.search div.search_main{
+	width: 43%;
+	height: 70%;
+	margin-left: 30%;
+	margin-top: -7.5%;
+}
+nav div.search div.search_main div.search_form {
+	width:85%;
+	height:36px;
+	border-width: 2px medium 2px 2px;
+	border-style: solid none solid solid;
+	border-color: #FF2832 -moz-use-text-color #FF2832 #FF2832;
+	margin-left: 2%;
+	top: 25%;
+	position: relative;
+
+}
+nav div.search div.search_main div.search_form form input{
+	width: 75%;
+	max-width: 430px;
+	min-width: 200px;
+	height: 18px;
+	position: relative;
+	margin-left: 3%;
+	margin-top: 1.5%;
+	border:0px;
+}
+nav div.search div.search_main div.search_form div.search_span{
+	width: 91px;
+	height: 36px;
+	font: 16px/36px "Microsoft Yahei";
+	color: #969696;
+	cursor: pointer;
+	bottom: 79%;
+	position: relative;
+	margin-left: 81%;
+	background: #EAEAEA  none repeat scroll 0% 0%;
+	border-width: 0px 0px 0px 0px;
+	margin-top: 1px;
+	text-align: center;
+}
+nav div.search div.search_main div.search_form img{
+	margin-left: 99%;
+    position: relative;
+    top: -184%;
+}
+nav div.search div.search_main div.search_form div.se_page{
+	width:108%;
+	height:100%;
+	background:#fff;
+	bottom: 175%;
+	position: relative;
+}
+nav div.search div.search_main div.search_form div.se_page a{
+	color: #969696;
+	text-decoration:none;
+	font-size:12px;
+}
+nav div.search div.search_main div.search_form div.se_page a.left{
+	margin-left:1%;
+}
+nav div.search div.search_main div.search_form div.se_page a.right{
+	float:right;
+}
+nav div.search div.search_main div.search_form div.se_page a:hover{
+	color:#CE1825;
+	text-decoration:underline
+}
+nav div.search div.search_right{
+	width:199px;
+	height:40px;
+	background:#555;
+	margin-left: 80%;
+	margin-top: -3.2%;
+}
+nav div.search div.search_right div.ri_l{
+	width:111px;
+	height:40px;
+	background:#FF2832;
+	border: 2px solid #FF2832;
+}
+nav div.search div.search_right div.ri_l:hover{
+	background:#F6F6F6;
+	border-top: 2px;
+	border-left: 2px;
+	border-bottom: 2px;
+	border-right: 1px;
+	border-style: solid;
+	border-color: #dcdcdc;
+}
+nav div.search div.search_right div.ri_l a{
+	font: 14px/36px "Microsoft Yahei";
+	color:#fff;
+	text-decoration:none;
+	margin-left: 40px;
+	position: relative;
+	bottom: 40px;
+}
+nav div.search div.search_right div.ri_l a:hover{
+	color:#FF2832;
+}
+nav div.search div.search_right div.ri_l div.img{
+	width:100%;
+	height:100%;
+	background:url("../images/se_r.png") no-repeat;
+}
+nav div.search div.search_right div.ri_l div.img:hover{
+	width:100%;
+	height:100%;
+	background:url("../images/se_r.png") no-repeat;
+	background-position:100% 100%;
+	right:87px;
+	bottom:5px;
+	position: relative;
+}
+nav div.search div.search_right div.ri_l div.img:hover b{
+	color:#ff2832;
+}
+nav div.search div.search_right div.ri_r{
+	width:88px;
+	height:40px;
+	background:#F6F6F6;
+	margin-left: 115px;
+	margin-top: -44px;
+	border-top: 2px;
+	border-left: 1px;
+	border-bottom: 2px;
+	border-right: 2px;
+	border-style: solid;
+	border-color: #dcdcdc;
+}
+nav div.search div.search_right div.ri_r a{
+	font: 14px/36px "Microsoft Yahei";
+	color:#646464;
+	text-decoration:none;
+	margin-left: 15px;
+}
+nav div.search div.search_right div.ri_r a:hover{
+	color:#FF2832;
+}
+nav div.menu{
+	width:90%;
+	height:43px;
+	margin:0 auto;
+}
+nav div.menu ul li{
+	list-style:none;
+	float:left;
+}
+nav div.menu ul li a{
+	text-decoration:none;
+	color: #323232;
+	font: bold 14px/40px "Microsoft Yahei";
+	margin-left: 30px;
+}
+nav div.menu ul li a:hover{
+	color:#FF2832;
+}
+nav div.menu ul li.all{
+	width:200px;
+	height:40px;
+	background:#FF2832;
+}
+nav div.menu ul li.all a{
+	color:#fff;
+	margin-left:30px;
+}
+nav div.menu ul li.all1 a{
+	position: relative;
+	top: -17px;
+}

@@ -1,0 +1,125 @@
+footer{
+	width:100%;
+	height: 457px;
+	font-family:Arial,Verdana,"宋体";
+	margin-top: 800px;
+}
+div.footer1{
+	position: absolute;
+	width: 100%;
+}
+footer div.footer_title{
+	width:100%;
+	height:90px;
+	background:#F5F5F5;
+	margin:0 auto;
+}
+footer div.footer_title div.fore{
+	width:80%;
+	height:100%;
+	margin:0 auto;
+}
+footer div.footer_title div.fore div.item{
+	width:220px;
+	height:49px;
+	float:left;
+	margin-left:3.5%;
+	margin-top:2%;
+}
+footer div.footer_title div.fore div.fore1{
+	background:url("../images/footer_1.png");
+}
+footer div.footer_title div.fore div.fore2{
+	background:url("../images/footer_2.png");
+}
+footer div.footer_title div.fore div.fore3{
+	background:url("../images/footer_3.png");
+}
+footer div.footer_title div.fore div.fore4{
+	background:url("../images/footer_4.png");
+}
+footer div.footer_main{
+	width:100%;
+	height:151px;
+	margin:20px auto 0;
+}
+footer div.footer_main dl dt{
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+footer div.footer_main dl{
+	display:inline-block;
+	margin-left:8%;
+}
+footer div.footer_main dl.dl_bg{
+	width:278px;
+	height:151px;
+	top: -46px;
+	position: relative;
+	background:url("../images/footer.png") no-repeat;
+}
+footer div.footer_main  dl.dl_bg dd p{
+	font-size:10px;
+	color:#666;
+	text-indent:15px;
+	margin-left: -40px;
+}
+footer div.footer_main dl.dl_bg dd p a{
+	color:#666;
+	text-decoration:none;
+	margin-left:180px;
+	top: 26px;
+	position: relative;
+}
+footer div.footer_main dl.dl_bg dd p a:hover{
+	color:#CE1825;
+}
+footer div.footer_main dl dd{
+	line-height:16px;
+}
+footer div.footer_main dl dd ul{
+	list-style:none;
+	margin-left:-80px;
+}
+footer div.footer_main dl dd ul li a{
+	font-size:10px;
+	color:#666;
+	text-decoration:none;
+}
+footer div.footer_main dl dd ul li a:hover{
+	color:#CE1825;
+}
+footer div.footer_copy{
+	width:90%;
+	height:173px;
+	margin:0 auto;
+
+}
+footer div.footer_copy hr{
+	width:93.5%;
+	color:#666;
+	margin-top:25px;
+}footer div.footer_copy div.copy_a{
+	width:71.5%;
+	margin:20px auto 0;
+}
+footer div.footer_copy div.copy_a a{
+	font-size:11px;
+	color:#666;
+	text-decoration:none;
+	margin-left:5px;
+}
+footer div.footer_copy div.copy_a a:hover{
+	color:#CE1825;
+}
+footer div.footer_copy div.copy_page{
+	width:80%;
+	margin:20px auto 0;
+	color:#666;
+	font-size:11px;
+}
+footer div.footer_copy div.copy_page p{
+	text-align:center;
+}

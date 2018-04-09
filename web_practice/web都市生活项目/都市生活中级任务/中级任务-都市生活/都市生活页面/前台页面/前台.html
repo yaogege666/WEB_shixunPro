@@ -1,0 +1,141 @@
+﻿<html >
+    <head>
+        <link rel="stylesheet" href="css/out.css">
+	   <script type="text/javascript" src="jquery-1.10.2.js"></script>
+       <script type="text/javascript" src="js/out.js" ></script>
+		<script type="text/javascript">		
+				window.onload=function(){
+				$(".iframe").hide();
+		        $("#go"). click(function(){ $(".iframe").show();$(".right").hide();  });				
+				}
+				
+		</script>
+    </head>
+
+    <body>
+    
+    <div class="w-bg">  <!-- 添加后背景 -->
+    <div class="wrap">
+   
+    <div class="head clearfix">
+    	<div class="head-left">
+    		<a href="发布信息.html" target="iframe"  id="go">[发布信息]</a>
+    		<a href="../后台页面/后台.html">[进入后台]</a>
+    	</div>
+    	<div class="head-right">
+    		<a href="#">设为主页-</a>
+    		<a href="#">收藏本页-</a>
+    		<a href="#">联系我们</a>
+    	</div>
+    </div>
+    <!-- nav 导航-->
+    <div class="nav">
+    	<div class="logo">
+    		<a href="#"><img src="images/logo.gif" height="56"></a>
+    	</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                <li><a href="#">暂时没有信息</a></li>
+                <li><a href="#">招聘信息</a></li>
+                <li><a href="#">培训信息</a></li>
+                <li><a href="#">房屋信息</a></li>
+                <li><a href="#">求购信息</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">招商引资</a></li>
+                <li><a href="#">公寓信息</a></li>
+                <li><a href="#">求职信息</a></li>
+                <li><a href="#">家教信息</a></li>
+                <li><a href="#">车辆信息</a></li>
+                <li><a href="#">出售信息</a></li>
+                <li><a href="#">寻找启示</a></li>
+            </ul>
+        </div>
+        <img src="images/pcard1.jpg" height="112" width="970" >
+    </div>
+    <!-- 左边 -->
+    <div class="left">
+        <div class="calendar">
+            <h2>日历</h2>
+            <img src="images/rili.png" height="182" width="184" >
+        </div>
+        <div class="search">
+            <div class="title">
+                <h2>信息快速搜索</h2>
+            </div>
+             <form action="#">
+                <div class="up">
+                    关键字: <input type="text" id="sousuo">   <br>                 
+                    条件:&nbsp;&nbsp;&nbsp;
+                    <select name="condition" >
+                        <option value="1">&nbsp;&nbsp;--请选择--&nbsp;&nbsp;</option>
+                        <option value="招聘">招聘</option>
+                        <option value="招商">招商</option>
+                        <option value="求职">求职</option>
+                    </select>                                    
+                </div>  
+                <div class="type">           
+                    <ul>
+                        <li><p>搜索类型:</p></li>
+                    <li>
+                        <input type="radio" name="sear">全字匹配
+                        <br>
+                        <input type="radio" name="sear">模糊搜索
+                    </li>
+                    <li>
+                        <input type="button" value="搜索" id="sousuo" onclick="f()" >
+                    </li>
+                    </ul>				
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 右边 -->
+		<iframe name="iframe" width="720px" height="500px" scrolling="no" id="iframe" src="发布信息.html" class="iframe"></iframe>
+    <div class="right">
+        <div class="up">
+            <h3>推荐信息<span>『缴费专区』</span></h3>
+            <div class="list">             
+               <ul>
+                   <li><a href="#"><span>『求职信息』</span>求职信息标题</a></li>
+				   <li><a href="#"><span>『招聘信息』</span>招聘信息标题</a></li>
+                   <li><a href="#"><span>『培训信息』</span>培训信息标题</a></li>
+                   <li><a href="#"><span>『求购信息』</span>求购信息标题</a></li>				   
+                   <li><a href="#"><span>『求职信息』</span>求职信息标题</a></li>
+                   <li><a href="#"><span>『招聘信息』</span>招聘信息标题</a></li>				   
+                   <li><a href="#"><span>『培训信息』</span>培训信息标题</a></li>
+                   <li><a href="#"><span>『求购信息』</span>求购信息标题</a></li>
+               </ul>
+            </div>
+        </div>
+		<!--中部 -->
+        <div class="middle">
+            <img src="images/pcard2.jpg" width="720" >
+        </div>
+        <!--底部 -->
+        <div class="bottom">
+            <h3>最新信息<span>『免费专区』</span></h3>
+            <div class="bottom2">
+            <div class="peixun">
+                <h2>培训信息</h2>
+                <p class="infor"> <a href="1"><font color="black">★ 发布培训信息标题</font></a></p>
+                <a href="#"><span>更多...</span></a>
+            </div>
+            <div class="qiuzhi">
+                <h2>求职信息</h2>
+                <p class="infor"> <a href="1"><font color="black">★ 发布求职信息标题</font></a></p>
+                <a href="#"><span>更多...</span></a>
+            </div>
+            </div>
+        </div>
+    </div>	
+    <!-- end wrap -->
+    </div>
+
+    <div class="footer">
+        <img src="images/end.jpg" >
+    </div>
+    <!-- end w-bg -->
+    </div>
+    </body>
+</html>

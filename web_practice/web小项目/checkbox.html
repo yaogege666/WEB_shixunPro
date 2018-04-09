@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>checkboxText</title>
+<script  language="javascript" type="text/javascript" >
+function selectAll(){
+var a=document.getElementsByName("x");
+for(var i=0;i<a.length;i++){
+a[i].checked=true;
+}
+
+}
+function unselectAll(){
+var b=document.getElementsByName("x");
+for(var i=0;i<b.length;i++){
+b[i].checked=false;
+}
+}
+
+function showInfo(){
+var str=" ";
+var z=document.getElementsByName("x");
+for(var i=0;i<z.length;i++){
+if(z[i].checked==true){
+str +="  "+z[i].value;}
+}
+document.getElementById("inner").innerHTML=str;
+/*
+inner:用来获取元素内的内容
+这一整句的含义是：获取到id名为inner的一整对标签内的内容
+span含义是在行内定义一个区域
+*/
+}
+
+</script>
+</head>
+<body >
+<form>
+ <input type="checkbox" name="x" value="旅游"/>旅游<br/>
+<input type="checkbox" name="x"   value="音乐"/>音乐<br/>
+<input type="checkbox" name="x"  value="运动"/>运动<br/>
+ 选中的信息为：<span id="inner"></span><br/>
+<input type="button" value="全选" onclick=" selectAll() " name="全选">
+<input type="button" value="取消全选" onclick="unselectAll() " name="取消全选">
+<input type="button" value="显示" onclick=" showInfo() " name="显示">
+</form>
+</body>
+</html>

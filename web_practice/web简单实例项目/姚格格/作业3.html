@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml//DTD/xhtmll-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<mata http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册界面</title>
+<script  type="text/javascript">
+document.title="注册界面"；
+function checkPassword(testObject){
+if(testObject.value.length<2){
+alert("用户名长度小于两位！")；
+}
+}
+
+
+</script>
+
+<script  type="text/javascript">
+document.title="注册界面"；
+function checkPassword(testObject){
+if(testObject.value.length>10){
+alert("用户名长度大于10位！")；
+}
+}
+
+
+</script>
+<script  type="text/javascript">
+document.title="注册界面"；
+function checkPassword(testObject){
+if(testObject.value.length>6){
+alert("两次输入的口令不相同！")；
+}
+}
+
+
+</script>
+<script  type="text/javascript">
+document.title="注册界面"；
+function checkPassword(testObject){
+if(testObject.value.length>10){
+alert("用户名长度大于10位！")；
+}
+}
+
+
+</script>
+
+<h2   align="center">请注册</h2>
+
+
+
+
+
+</head>
+<body>
+<form usename="form1" action="register.jsp" method="post"> 
+用户名；<input type="text" name="user_name"     size="18">2-10位<br><br>
+口令；<input type="password"    onBlur="checkPassword(this)"      name="psw" size="20">2-8位，不能与用户名相同<br><br>
+确认口令：<input type="password"  name="psw" size="20"><br><br>
+生日：<input type="birthday" name="bty" size="18">格式为：1998-1-1<br><br>
+
+
+学历：<input type="radio" name="degree" value="专科" name="m1"/ >专科
+<input type="radio" name="degree" value="本科" name="m2" checked="checked"/ >本科
+<input type="radio" name="degree" value="硕士研究生" name="m3"/ >硕士研究生
+<input type="radio" name="degree" value="博士研究生" name="m4"/ >博士研究生
+<br><br>
+
+地区：<select name="distict">
+<option value="1" selected="selected">东北</option>
+<option value="2" >华东</option>
+<option value="3" >华南</option>
+<option value="4" >华北</option>
+<option value="5" >东南</option>
+<option value="6" >西南</option>
+<option value="7" >西北</option>
+<option value="0" >华中</option>
+</select>
+
+
+
+<br><br>
+<form>
+备注：<textarea name="remark" rows="2" clos="20"></textarea>
+<br><br>
+<input type="reset" value="重置">
+<input type="submit" value="提交并进行checkbox测试">
+<input type="submit"value="select测试">
+</form>
+
+
+
+
+
+</form>
+
+
+
+</body>
+
+
+
+</html>

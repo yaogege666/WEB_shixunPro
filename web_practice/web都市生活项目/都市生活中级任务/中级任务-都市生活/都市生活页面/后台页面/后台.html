@@ -1,0 +1,174 @@
+﻿<html>
+
+    <head> 
+	<meta charset="utf-8">
+        <link rel="stylesheet" href="css/ygg2.css">
+		<script type="text/javascript" src="jquery-1.10.2.js"></script>
+		
+
+        <script type="text/javascript">
+		window.onload=function(){
+		$("#iframe1").hide();//iframe1中内容开始是隐藏
+		$("#查询1"). click(function(){ 
+            $(".iframe").hide(); 
+            $("#iframe1").show(); 
+             });//点击查询时候iframe1里面的内容会在左侧页面上显示出来
+
+
+
+		$("#iframe2").hide();//iframe2中内容开始是隐藏
+		$("#显示"). click(function(){ 
+            $(".iframe").hide();
+             $("#iframe2").show();
+               });//同样的点击显示按钮的时候iframe2里面的内容也会被显示出来
+
+
+
+
+		$("#iframe3").hide();//iframe3中内容开始是隐藏
+		$("#查询2"). click(function(){  
+            $(".iframe").hide(); 
+            $("#iframe3").show();  
+        });	
+		}
+		</script>
+
+
+
+
+
+
+    </head>
+	
+    <body>
+    	<div class="wrap">
+    	<!-- header start 头部-->
+			<div class="head">
+				<img src="images/admin_top.jpg" height="120" width="970">
+				<div class="photo">
+					<a href="../前台页面/前台.html" class="index"><img src="images/admin_index.gif" height="31" width="92" ></a>
+					<a href="../登录页面/登录.html" class="exit"><img src="images/admin_exit.gif" height="31" width="90" ></a>
+				</div>
+			</div>
+
+
+
+    		
+    		<div class="main clearfix">   		
+    			<div class="line"></div> 
+			
+
+
+
+
+    		<div class="left">  
+    			<img src="images/default_t.jpg" height="20" width="690" >
+    			<img src="images/default_m.jpg" height="392" width="690" >
+    			<img src="images/default_e.jpg" height="27" width="690" >
+    			<p class="text">欢迎登录都市供求信息网后台!</p>	
+                <!--三张分开的图片同时作为背景图片，首先将他们在写好的div里进行整合，然后上面的字，需要再利用css选择器对这个标签进行定位，使其在插入的图片的上面显示出来，开始做的时候是以这三张图片分别作为背景来处理，后来问的别人知道这样也可以很好地实现-->			
+			
+    		</div>
+    		<!-- main right 右边 -->
+    		<div class="right">
+    			<div class="background">
+    			<p>欢迎 管理员 登录：</p>
+    			<div class="user">
+    				<div class="guanli">
+    					<h3>■用户管理</h3>
+    				</div>
+					
+    				<div class="search">
+    					<p>请输入要查询的用户ID:</p>
+    					<div class="input">
+    					<input type="text" class="txt-search">
+    					<a href="用户查询.html" target="iframe1"><input type="button" class="chaxun" value="查询" id="查询1"></a>
+
+
+							<iframe name="iframe1" width="650px" height="400px" scrolling="yes" id="iframe1" src="用户查询.html" class="iframe"></iframe>
+
+							<iframe name="iframe2" width="650px" height="400px" scrolling="yes" id="iframe2" src="信息显示.html" class="iframe"></iframe>
+
+							<iframe name="iframe3" width="650px" height="400px" scrolling="yes" id="iframe3" src="付费查询.html" class="iframe"></iframe>
+  <!--根据题目要求，我需要在这三个按键的地方运用jquery把这三个页面嵌入进去，三个页面单独写出来，然后利用iframe标签嵌入，然后在jQuery代码中显示出来-->
+
+    					</div>
+    				</div>
+    			</div>
+    			
+    			<div class="show">
+    				<div class="title">
+    					<h3>■显示方式</h3>
+    				</div>
+    				<div class="status">
+    					<form action="#">  
+                        <!--<fieldset>标签并没有见过 ,百度知道的，设置其属性最好在标签内进行style设置，具体设置参考文件夹里的特殊标记--> 				
+    						<fieldset>
+    							<legend>★付费状态</legend>
+    							<ul class="status1">
+    							<li><input type="radio" name="pay"> 未付费</li>
+    							<li><input type="radio" name="pay"> 已付费</li>
+    							<li><input type="radio" name="pay"> 全部</li>
+    							</ul>
+    						</fieldset>
+    						<fieldset>
+    							<legend>★审核状态</legend>
+    							<ul class="status2">
+    							<li><input type="radio" name="check"> 未审核</li>
+    							<li><input type="radio" name="check"> 已审核</li>
+    							<li><input type="radio" name="check"> 全部</li>
+    							</ul>
+    						</fieldset>
+    					</form>
+    				</div>    				
+    			</div>
+    			
+    			<div class="message">
+    				<form action="#">
+    					信息类别: 
+						<select>
+    						<option value="">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  </option>
+    						<option value=""></option>
+    						<option value=""></option>
+    						<option value=""></option>
+    					</select>
+    					<a href="信息显示.html" target="iframe2"><input type="button" value="显示" id="显示"></a>
+    				</form>
+    			</div>
+    			
+    			<div class="pay-set">
+    				 <div class="title">
+    					<h3>■付费设置</h3>
+    				</div>
+    				<form action="#">
+    					请输入要设为已付费状态的信息ID:
+    					<input type="text"  class="txt">
+    					<a href="付费查询.html" target="iframe3"><input type="button" value="查询" class="chaxun" id="查询2"></a>
+    				</form>
+    			</div>
+    	
+    			<div class="calendar">
+    				 <div class="title">
+    					<h3>■日历</h3><!--采用表头标签的写法来达到方块和字体变化相同，-->
+    				</div>
+    				<div class="img">
+    					<img src="images/rili.png" width="230px">
+    				</div>    				
+    			</div>
+    			<!-- end back -->
+    			</div>
+    			<!-- end m-right -->
+    		</div>  
+    	<!-- main end -->			
+    		</div>
+    	<!-- footer line -->  
+    	<div class="footer-line"></div>
+    	<div class="footer"><img src="images/end.jpg"  ></div>
+
+
+
+
+
+    	</div>
+    </body>
+</html>

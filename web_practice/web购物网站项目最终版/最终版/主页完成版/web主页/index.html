@@ -1,0 +1,792 @@
+<!--
+2015-12-30
+	外链style.css
+	{
+		添加a标签控制，去掉了下划线
+	}
+	外链xue.js
+	{
+		减少雪花数量，更改颜色
+	}
+	外链shop.html
+	{
+		增加登录注册以及纸飞机的超链接
+		增加上边导航栏三角号的转换js
+		修改本页面的三角号处的标签，增加需要的id值
+		增加本页面两个商品展示栏的触发事件js,
+		在本页面增加需要的id值
+		添加主页图标的链接
+	}
+	主页{
+		增加登陆链接
+		增加iframe后8个js连接
+		增加第三个分类
+		
+		增加注册以及订单超链接
+		增加返回顶部功能
+	}
+	外链class1.html
+	{
+				第一个分类详细 小说 添加链接 xiaoshuo.html
+	}
+	外链checkout.html
+	{
+		增加上边导航栏三角号的转换js
+		修改本页面的三角号处的标签，增加需要的id值
+		
+		增加表单验证的js
+	}
+	外链dingdan.html
+	{
+		增加主页logo超链接
+		增加导航栏三角转换js
+		增加商品展示变换js
+		增加所需id
+		更改class
+	}
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<link href="my.ico" rel="shortcut icon"/>
+	<link rel="stylesheet" type="text/css" href="style/nav.css">
+	<link rel="stylesheet" type="text/css" href="style/footer.css">
+	<link type="text/css" rel="stylesheet" href="style/style.css"/>
+	<script type="text/javascript" src="js/index_js.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/xue.js"></script>
+	<title>随你便</title>
+</head>
+<body>
+	<nav>
+		<div class="nav_title">
+			<a href="###" name = "top"><img src="images/nav.jpg"></a>
+		</div>
+		<div class="nav_banner">
+			<div class="banner_left">
+				<div class="banner_id">送至：
+					<select>
+						<option value="new">青理新校区</option>
+						<option value="old">青理老校区</option>
+						<option value="four">青理四方校区</option>
+						<option value="fei">青理费县校区</option>
+					</select>
+				</div>
+			</div>
+			<div class="banner_right">
+				<div class="banner_page">
+					<p>欢迎光临随你便，请<a href="login.html"><span>登录</span></a> <a href="register.html">免费注册</a><p>
+				</div>
+				<div class="banner_shop">
+					<i></i>
+					<a href="###">购物车</a><span>0</span>
+				</div>
+				<div class="banner_a">
+					<a href="###">｜　我的订单　｜</a>
+					<a href="###">随你便出版　｜</a>
+					<a href="###">手机随你便　｜</a>
+					<a href="###">我的随你便　｜</a>
+					<ul style="display:none;">
+						<li><a href="###">我的积分</a></li>
+						<li><a href="">我的收藏</a></li>
+						<li><a href="">我的余额</a></li>
+						<li><a href="">我的评论</a></li>
+						<li><a href="">礼品/礼品卡</a></li>
+						<li><a href="">电子书架</a></li>
+					</ul>
+				
+					<a href="###">企业采购　｜</a>
+					<ul style="display:none;">
+						<li><a href="">大宗采购</a></li>
+						<li><a href="">礼品卡采购</a></li>
+						<li><a href="">礼品卡激活</a></li>
+						<li><a href="">礼品卡使用</a></li>
+					</ul>
+					<a href="###">客户服务　｜</a>
+					<ul style="display:none;">
+						<li><a href="">帮助中心</a></li>
+						<li><a href="">自动退换货</a></li>
+						<li><a href="">联系客服</a></li>
+						<li><a href="">我要投诉</a></li>
+						<li><a href="">帮助建议</a></li>
+					</ul>
+				</div>
+				<div class="banner_logo">
+					<img src="images/banner_logo.png" ><span>
+纽交所上市公司</span>
+				</div>
+			</div>
+		</div>
+		<div class="search">
+			<div class="search_left">
+				<img src="images/nav_left.gif">
+			</div>
+			<div class="search_main">
+				<div class="search_form">
+					<form action="" method="post">
+						<input type="text" name="search" placeholder=" 圣诞礼品3.9-5折">
+					</form>
+					<div class="search_span">
+						<span>全部分类</span>
+					</div>
+					<img src="images/se.png">
+					<div class="se_page">
+						<a href="###">热搜：</a>
+						<a href="###" class="left">宗庆后</a>
+						<a href="###" class="left">圣诞专享</a>
+						<a href="###" class="left">百货圣诞节</a>
+						<a href="###" class="left">ecco</a>
+						<a href="###" class="left">惠氏</a>
+						<a href="###" class="left">海外购</a>
+						<a href="###" class="right">高级搜索</a>
+					</div>
+				</div>
+			</div>
+			<div class="search_right">
+				<div class="ri_l">
+					<div class="img"></div>
+					<a href="shop.html">购物车 <b>0</b></a>
+				</div>
+				<div class="ri_r">
+					<a href="dingdan.html">我的订单</a>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="all">
+					<a href="###">全部商品详细分类</a>
+				</li>
+				<li>
+					<a href="###">圣诞狂欢</a>
+				</li>
+				<li>
+					<a href="###">尾品汇</a>
+				</li>
+				<li>
+					<a href="###">图书</a>
+				</li>
+				<li>
+					<a href="###">电子书</a>
+				</li>
+				<li>
+					<a href="###">服装</a>
+				</li>
+				<li>
+					<a href="###">运动户外</a>
+				</li>
+				<li>
+					<a href="###">孕婴童</a>
+				</li>
+				<li>
+					<a href="###">家居</a>
+				</li>
+				<li class="all1">
+					<a href="###">随你便优品</a>
+				</li>
+				<li class="all1">
+					<a href="###">随你便超市</a>
+				</li>
+				<li class="all1">
+					<a href="###">海外购</a>
+				</li>
+				<li class="all1">
+					<a href="###">最值当</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section>	
+		<div id = "main1">
+			<div id = "main1_left">
+				<div class = "fenlei">
+			<ul>
+				<li><a href = "###" id = "left_1">图书、童书、电子书</a></li>
+					<li><a href = "###" id = "left_2">服饰、内衣</a></li>
+					<li><a href = "###" id = "left_3">鞋靴、箱包</a></li>
+					<li><a href = "###" id = "left_4">运动户外</a></li>
+					<li><a href = "###" id = "left_5">孕、婴、童</a></li>
+					<li><a href = "###" id = "left_6">家居、家纺、汽车</li>
+					<li><a href = "###" id = "left_7">家居、家装 康体</li>
+				    <li><a href = "###" id = "left_8">美妆、个人护理、成人</a></li>
+					<li><a href = "###" id = "left_9">食品、茶酒、生鲜</a></li>
+					<li><a href = "###" id = "left_10">腕表、珠宝饰品、眼镜</a></li>
+					<li><a href = "###" id = "left_11">手机、数码</a></li>
+					<li><a href = "###" id = "left_12">电脑办公</li>
+					<li><a href = "###" id = "left_13">家用电器</li>
+					<li><a href = "###" id = "left_14">随你便礼品卡</li>
+				</ul>
+				</div>
+			</div>
+			<div id = "main1_center">
+				<iframe id="mian1_center_i" src="pic_change\\PIC1.html"  frameborder="0" scrolling="no">
+				</iframe>
+				<div id = "qiehuan">
+					<font size = "9" ><a id = "main1_a1" href = "#">☺</a></font>
+					<font size = "9" ><a id = "main2_a2" href = "#">☺</a></font>
+					<font size = "9" ><a id = "main2_a3" href = "#">☺</a></font>
+				</div>
+			</div>
+			<div id = "main1_right">
+				<img src = "images/2.jpg" id="main1_right_img" class="img1" /><br/>
+				<div id = "main_right_div1" >
+					<div class="main_a">
+						<div class="a1 a"><a href = "###">促销信息</a></div>
+						<div class="a2 a"><a href = "###">服务广告</a></div>
+					</div>
+					<div id = "main_right_div2_d1">
+						 <DIV CLASS="submenu">
+							<a href="###">新年特惠 满199减99</a><br />
+							<a href="###">精选童书 满200减100</a><br />
+							<a href="###">双"旦"大礼包，好书一元起</a><br />
+							<a href="###">百货爆品最高满199减100</a>
+						</DIV> 
+						<DIV CLASS="submenu1 submenu">
+							<a href="###">积分支付上线了，直接当钱用！</a><br />
+							<a href="###">爆品电子书,每天免费领</a><br />
+							<a href="###">受雾霾影响订单推迟配送</a><br />
+							<a href="###">关于假冒客服诈骗声明</a>
+						</DIV>
+					</div>
+				</div>
+				<div id = "main_right_div2" >
+					<div class="main_a">
+						<div class="a1 a"><a href = "###" id = "main1_right_a3" >当当生活</a></div>
+						<div class="a2 a"><a href = "###" id = "main1_right_a4" >当当优品</a></div>
+						<div class="a3 a"><a href = "###" id = "main1_right_a5" >礼品盒</a></div>
+					</div>
+					<div id = "main_right_div2_d1">
+						 <DIV ID="main_right_ds3" CLASS="submenu" style="display:none">
+							<img src="images/main1.jpg">  
+						</DIV> 
+							<DIV ID="main_right_ds4" CLASS="submenu" style="display:none">
+								<img src="images/main2.jpg">
+						</DIV>
+						<DIV ID="main_right_ds5" CLASS="submenu" style="display:none">
+							<img src="images/main3.jpg">
+						</DIV>
+					</div>
+				</div>
+			</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id = "div3">
+			<div id = "div2_d1">
+				<span>商品今日闪购
+					<a id = "main1_a4" href = "#">☺</a>
+					<a id = "main1_a5" href = "#">☺</a>
+					<a id = "main1_a6" href = "#">☺</a>
+					<a id = "main1_a7" href = "#">☺</a>
+				</span>
+			</div>
+			<div class= "div3_1" id = "div3_2_1" style="display: block;" type="item">
+				<ul>
+					<li>
+						<a href="###"><img src="images/main1_1.jpg"></a><br/>
+						<a href="###" class="a1">  惠人2代升级版原汁机圣诞闪价抢 </a>
+						<a href="###" class="a2">仅此一天</a>
+						<span>¥2699.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_2.jpg"></a><br/>
+						<a href="###" class="a1"> 让孩子痴迷的纸飞机</a>	
+						<a href="###" class="a2">全2册|5折抢！</a>
+						<span> ¥79.90 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_3.jpg"></a><br/>
+						<a href="###" class="a1">自营 飞科电动剃须刀</a>
+						<a href="###" class="a2">充电式 智能防夹须</a>
+						<span>¥89.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_4.jpg"></a><br/>
+						<a href="###" class="a1"> 哈罗闪婴儿二合一沐浴洗发露 </a>
+						<a href="###" class="a2">200ml 一瓶省心 洗浴二合一</a>
+						<span>¥49.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_5.jpg"></a><br/>
+						<a href="###" class="a1">百年佛缘（全九册）</a>
+						<a href="###" class="a2">思想智慧集大成之作 5折惠顾</a>
+						<span> ¥340.00 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_6.jpg"></a><br/>
+						<a href="###" class="a1">志高干衣机双层烘衣机</a>
+						<a href="###" class="a2">加强版双层+毛巾架</a>
+						<span>¥209.00 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_7.jpg"></a><br/>
+						<a href="###" class="a1"> 杜蕾斯持久薄避孕套共43只</a>
+						<a href="###" class="a2">成人情趣性用品 包邮货到付</a>
+						<span>¥59.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_8.jpg"></a><br/>
+						<a href="###" class="a1"> 优品 纯棉斜纹四件套</a>
+						<a href="###" class="a2">100%纯棉材质 天然亲肤</a>
+						<span>¥99.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_9.jpg"></a><br/>
+						<a href="###" class="a1"> 小熊家用智能加湿器</a>
+						<a href="###" class="a2">智能温度环 水净化功能</a>
+						<span>¥199.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_10.jpg"></a><br/>
+						<a href="###" class="a1"> 天生就要练</a>
+						<a href="###" class="a2">满100减30</a>
+						<span>¥49.30  </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_11.jpg"></a><br/>
+						<a href="###" class="a1"> 老板欧式烟灶套</a>
+						<a href="###" class="a2"> 赠精品刀具套装+九阳豆浆机
+</a>
+						<span>¥4580.00  </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main1_12.jpg"></a><br/>
+						<a href="###" class="a1">  神奇的曼陀罗 繁星</a>
+						<a href="###" class="a2">49折</a>
+						<span>¥29.30  </span>
+					</li>
+				</ul>
+			</div>
+			<div class = "div3_1" style="display: none;" id = "div3_2_2"  type="item">
+				<ul>
+					<li>
+						<a href="###"><img src="images/main2_1.jpg"></a>
+						<a href="###" class="a1">冒险岛英语奇遇记</a>
+						<a href="###" class="a2">1-55折抢！</a>
+						<span>¥74.50</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_2.jpg"></a>
+						<a href="###" class="a1">迪士尼保暖防水公主雪地靴</a>
+						<a href="###" class="a2">孩子童年的造梦利器</a>
+						<span>¥139.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_3.jpg"></a>
+						<a href="###" class="a1">零售哲学</a>
+						<a href="###" class="a2">49折</a>
+						<span>¥45.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_4.jpg"></a>
+						<a href="###" class="a1">猴年吉祥物招财猴毛绒玩具</a>
+						<a href="###" class="a2">会唱新年歌</a>
+						<span>¥29.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_5.jpg"></a>
+						<a href="###" class="a1">老板欧式烟灶套装</a>
+						<a href="###" class="a2">赠精品刀具套装+九阳豆浆机</a>
+						<span>
+¥4580.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_6.jpg"></a>
+						<a href="###" class="a1">曾文正公全集</a>
+						<a href="###" class="a2">史上最低价，仅限一天</a>
+						<span>¥188.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_7.jpg"></a>
+						<a href="###" class="a1">猫头鹰王国套装（共15册）</a>
+						<a href="###" class="a2">5折抢！</a>
+						<span>¥163.50</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_8.jpg"></a>
+						<a href="###" class="a1">迪士尼舒适柔软毛毛虫童鞋</a>
+						<a href="###" class="a2">非一般的帅气</a>
+						<span>¥109.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_9.jpg"></a>
+						<a href="###" class="a1">2015秋冬新款Clark</a>
+						<a href="###" class="a2">品牌日特价满500减20,满1000</a>
+						<span>¥899.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_10.jpg"></a>
+						<a href="###" class="a1">征程 从鱼到人的生命之旅</a>
+						<a href="###" class="a2">4.9折限时抢</a>
+						<span>¥126.40 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_11.jpg"></a><br/>
+						<a href="###" class="a1"> 优品 户外不锈钢保温壶
+</a>
+						<a href="###" class="a2">1.2L 优质不锈钢/a>
+						<span>¥69.00  </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main2_12.jpg"></a><br/>
+						<a href="###" class="a1"> 百科全书小布朗（第一辑全10册）</a>
+						<a href="###" class="a2"> 5.3折抢！</a>
+						<span>¥79.30  </span>
+					</li>
+				</ul>
+			</div>
+			<div class = "div3_1" id = "div3_2_3" style="display: none;" type="item">
+				<ul>
+					<li>
+						<a href="###"><img src="images/main3_1.jpg"></a>
+						<a href="###" class="a1">科学启蒙 （1-3年级）</a>
+						<a href="###" class="a2">礼盒装限时抢</a>
+						<span>¥74.50</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_2.jpg"></a>
+						<a href="###" class="a1">世界第一少年侦探团</a>
+						<a href="###" class="a2">（第一辑全5册） 5折抢！</a>
+						<span>¥49.50</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_3.jpg"></a>
+						<a href="###" class="a1">Amii印花修身加绒百搭打</a>
+						<a href="###" class="a2">品牌日爆品</a>
+						<span>
+¥89.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_4.jpg"></a>
+						<a href="###" class="a1">韩束红石榴鲜活水盈七件套</a>
+						<a href="###" class="a2">下单立减100</a>
+						<span>¥199.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_5.jpg"></a>
+						<a href="###" class="a1">杨绛文集 著译全集精装七种</a>
+						<a href="###" class="a2">回味经典，品读人生</a>
+						<span>¥117.10</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_6.jpg"></a>
+						<a href="###" class="a1">富爸爸全家富套装</a>
+						<a href="###" class="a2">49折抢</a>
+						<span>¥55.70</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_7.jpg"></a>
+						<a href="###" class="a1">Amii百搭高领蓬松保暖毛</a>
+						<a href="###" class="a2">超级品牌日促销</a>
+						<span>¥89.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_8.jpg"></a>
+						<a href="###" class="a1">自营帮宝适特级棉柔L124</a>
+						<a href="###" class="a2">全新“魔法纸尿裤”新体验</a>
+						<span>¥269.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_9.jpg"></a>
+						<a href="###" class="a1">想的 落地可折叠电热晾衣架</a>
+						<a href="###" class="a2">晾衣烘干必备神器</a>
+						<span>¥499.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_10.jpg"></a>
+						<a href="###" class="a1">当当优品英伦风牛津布收纳箱</a>
+						<a href="###" class="a2">66L带隔层 防水防潮</a>
+						<span>¥39.90 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_11.jpg"></a><br/>
+						<a href="###" class="a1">  藏地密码：唐卡典藏版大全集</a>
+						<a href="###" class="a2">  探索西藏的秘密</a>
+						<span>¥166.50</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main3_12.jpg"></a><br/>
+						<a href="###" class="a1"> 奥郎格空气净化器</a>
+						<a href="###" class="a2">AG800冬季除雾霾</a>
+						<span>¥9999.00 </span>
+					</li>
+				</ul>
+			</div>
+			<div class = "div3_1" id = "div3_2_4" style="display: none;" type="item">
+				<ul>
+					<li>
+						<a href="###"><img src="images/main4_1.jpg"></a>
+						<a href="###" class="a1">美国LP专业运动护关节护膝</a>
+						<a href="###" class="a2">限时抢购</a>
+						<span>¥120.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_2.jpg"></a>
+						<a href="###" class="a1">Thinkpad E450</a>
+						<a href="###" class="a2">击穿底价送包鼠</a>
+						<span>
+¥2999.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_3.jpg"></a>
+						<a href="###" class="a1">Amii百搭纯色卷边圆领混</a>
+						<a href="###" class="a2">超级品牌日促销</a>
+						<span>¥89.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_4.jpg"></a>
+						<a href="###" class="a1">富爸爸全家富套装</a>
+						<a href="###" class="a2">49折抢</a>
+						<span>¥55.70</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_5.jpg"></a>
+						<a href="###" class="a1">宝妈日记BOU.MA</a>
+						<a href="###" class="a2">榄油孕纹预防产后修复100ml</a>
+						<span>¥29.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_6.jpg"></a>
+						<a href="###" class="a1">[自营食品] 意大利进口</a>
+						<a href="###" class="a2">限时抢</a>
+						<span>¥93.90</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_7.jpg"></a>
+						<a href="###" class="a1">自营 美的1.7L电水壶</a>
+						<a href="###" class="a2">无缝全钢 防尘出水口</a>
+						<span>
+¥99.000</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_8.jpg"></a>
+						<a href="###" class="a1">夏普新加湿型净化器</a>
+						<a href="###" class="a2">神秘礼品 送货上门 全国联保</a>
+						<span>¥1200.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_9.jpg"></a>
+						<a href="###" class="a1">凯仕乐加热按摩披肩颈肩乐</a>
+						<a href="###" class="a2">独立加热 99种模式</a>
+						<span>¥118.00</span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_10.jpg"></a>
+						<a href="###" class="a1">奥郎格空气净化器AG800</a>
+						<a href="###" class="a2">冬季除霾</a>
+						<span>¥9999.00 </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_11.jpg"></a><br/>
+						<a href="###" class="a1"> 迪士尼舒适柔软毛毛虫童鞋
+</a>
+						<a href="###" class="a2">非一般的帅气</a>
+						<span>¥109.00  </span>
+					</li>
+					<li>
+						<a href="###"><img src="images/main4_12.jpg"></a><br/>
+						<a href="###" class="a1"> 杜蕾斯爱无限定制装共43只</a>
+						<a href="###" class="a2"> 成人情趣性用品 包邮货到付款</a>
+						<span>¥59.00  </span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner_left">
+			<div class="left_1_1">
+				<div class="left_1 left">
+				<a href="###"><span>图书</span></a>
+				</div>
+			</div>
+			<div class="left_12">
+				<div class="left_2 left">
+					<a href="###"><span>女装</span></a>
+				</div>
+			</div>
+			<div class="left_13">
+				<div class="left_3 left">
+					<a href="###"><span>男装</span></a>
+				</div>
+			</div>
+			<div class="left_14">
+				<div class="left_4 left left_f">
+					<a href="###"><span>鞋包配饰</span></a>
+				</div>
+			</div>
+			<div class="left_15">
+				<div class="left_5 left left_f">
+					<a href="###"><span>运动户外</span></a>
+				</div>
+			</div>
+			<div class="left_16">
+				<div class="left_6 left left_f">
+					<a href="###"><span>童装童鞋</span></a>
+				</div>
+			</div>
+			<div class="left_17">
+				<div class="left_7 left">
+					<a href="###"><span>孕婴童</span></a>
+				</div>
+			</div>
+			<div class="left_18">
+				<div class="left_8 left left_f">
+					<a href="###"><span>美妆珠宝</span></a>
+				</div> 
+			</div>
+			<div class="left_19">
+				<div class="left_9 left">
+					<a href="###"><span>食品</span></a>
+				</div>
+			</div>
+			<div class="left_20">
+				<div class="left_10 left">
+					<a href="###"><span>家生活</span></a>
+				</div>
+			</div>
+			<div class="left_21">
+				<div class="left_11 left left_f">
+					<a href="###"><span>数码家电</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="banner_right">
+			<img src="images/right1.jpg">
+			<div class="right_top">
+			</div>
+			<div class="right_ml">
+				<div class="img"></div>
+				<div class="page"><span>购物车</span></div>
+				<div class="page1">0</div>
+			</div>
+			<div class="right_bot">
+				<div class="bot1 bot">
+					<div class="bota"><a href="###"><span>收藏页面</span></a></div>
+				</div>
+				<div class="bot2 bot">
+					<div class="bota"><a href="###"><span>我的收藏</span></a></div>
+				</div>
+				<div class="bot3 bot">
+					<div class="bota"><a href = "#top"><font align = "center">返回顶部</font></a></div>
+				</div>
+				<div class="bot4 bot">
+					<div class="bota1"><a href="#top">意见反馈</a></div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<footer>
+		<div class="footer_title">
+			<div class="fore">
+				<div class="item fore1">
+				</div>
+				<div class="item fore2">
+				</div>
+				<div class="item fore3">
+				</div>
+				<div class="item fore4">
+				</div>
+			</div>
+		</div>
+		<div class="footer_main">
+			<dl>
+				<dt>购物指南</dt>
+				<dd>
+					<ul>
+						<li><a href="###">购物流程</a></li>
+						<li><a href="###">会员介绍</a></li>
+						<li><a href="###">生活旅行/团购</a></li>
+						<li><a href="###">常见问题</a></li>
+						<li><a href="###">大家电</a></li>
+						<li><a href="###">联系客服</a></li>
+					</ul>	
+				</dd>	
+			</dl>
+			<dl>
+				<dt>配送方式</dt>
+				<dd>
+					<ul>
+						<li><a href="###">上门自提</a></li>
+						<li><a href="###">211限时达</a></li>
+						<li><a href="###">配送服务查询</a></li>
+						<li><a href="###">配送 费收取标准</a></li>
+						<li><a href="###">海外配送</a></li>
+						<li><a href="###">自助修改</a></li>
+					</ul>	
+				</dd>	
+			</dl>
+			<dl>
+				<dt>支付方式</dt>
+				<dd>
+					<ul>
+						<li><a href="###">货到付款</a></li>
+						<li><a href="###">在线支付</a></li>
+						<li><a href="###">分期付款</a></li>
+						<li><a href="###">礼品卡支付</a></li>
+						<li><a href="###">邮局汇款</a></li>
+						<li><a href="###">公司转账</a></li>
+					</ul>	
+				</dd>	
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd>
+					<ul>
+						<li><a href="###">售后政策</a></li>
+						<li><a href="###">招商报名<a></li>
+						<li><a href="###">价格保护</a></li>
+						<li><a href="###">退款说明</a></li>
+						<li><a href="###">返修/退换货</a></li>
+						<li><a href="###">取消订单</a></li>
+					</ul>	
+				</dd>	
+			</dl>
+			<dl>
+				<dt>特色服务</dt>
+				<dd>
+					<ul>
+						<li><a href="###">夺宝岛</a></li>
+						<li><a href="###">DIY装机</a></li>
+						<li><a href="###">延保服务</a></li>
+						<li><a href="###">随你便E卡</a></li>
+						<li><a href="###">随你便通信</a></li>
+						<li><a href="###">随你便+</a></li>
+					</ul>	
+				</dd>	
+			</dl>
+			<dl class="dl_bg">
+				<dt>随你便自营覆盖区</dt>
+				<dd>
+					<p>  随你便已向全国2359个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+					<p><a href="###"> 查看详情 ></a></p>
+				</dd>	
+			</dl>
+		</div>
+		<div class="footer_copy">
+			<hr height="4px" />
+			<div class="copy_a">
+				<a href="###">关于我们　｜</a>
+				<a href="###">联系我们　｜</a>
+				<a href="###">商家入驻　｜</a>
+				<a href="###">营销中心　｜</a>
+				<a href="###">手机随你便　｜</a>
+				<a href="###">有情链接　｜</a>
+				<a href="###">销售联盟　｜</a>
+				<a href="###">随你便社区　｜</a>
+				<a href="###">随你便公益　｜</a>
+				<a href="###">English Site　｜</a>
+				<a href="###">Contact Us</a>
+			</div>
+			<div class="copy_page">
+				<p>青岛市公安局城阳分局备案编号110105014669  |  京ICP证070359号  |  互联网药品信息服务资格证编号(京)-经营性-2014-0008  |  新出发京零 字第大120007号</p>
+				<p>音像制品经营许可证苏宿批005号  |  出版物经营许可证编号新出发(苏)批字第N-012号  |  互联网出版许可证编号新出网证(京)字150号</p>
+				<p>网络文化经营许可证京网文[2014]2148-348号  违法和不良信息举报电话：4006561155  Copyright © 2004-2015  随你便.com 版权所有</p>
+				<p>京东旗下网站：360TOP  拍拍网  网银在线</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

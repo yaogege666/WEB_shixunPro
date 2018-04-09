@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>公司网站</title>
+<script   type="text/javascript">  //定义原型函数trim（）来去掉表单输入数据前后的空格
+String.prototype.trim=function(){
+return this.replace(/(^\s*)(\s*$)/g,"");
+
+}
+function check(){
+                                     
+
+var product=document.getElementById( "product");
+var account=document.getElementById( "account");
+var company=document.getElementById( "company");
+var name=document.getElementById( "name");
+var tel=document.getElementById( "tel");
+var email=document.getElementById( "email");	
+//判断订购产品表单元素是否有输入值
+if (product.value.trim().length==0) {
+	alert("请填写想订购的产品")；
+	product.focus();
+	return flase;
+}else  if(account.value.trim().length==0){
+
+	alert("请填写订购数量")；
+	account.focus();
+	return flase;
+}
+//判断输入的数量是否是数字类型
+else if(isNaN(account.value)){
+alert("请填写正确的订购数量")；
+account.select();   //将输入的错误的数量值选中
+return flase;
+
+
+}else  if(account.value.trim().length==0){
+
+	alert("请填写订购的公司名称")；
+	company.focus();
+	return flase;
+}
+else  if(account.value.trim().length==0){
+
+	alert("请填写公司联系人")；
+	name.focus();
+	return flase;
+}
+else  if(account.value.trim().length==0){
+
+	alert("请填写订购联系电话")；
+	tel.focus();
+	return flase;
+}
+else  if(account.value.trim().length==0){
+
+	alert("请填写订购email")；
+	email.focus();
+	return flase;
+}
+else  if(email.value.indexOf("@")==1){
+
+	alert("请填写正确的email")；
+	email.select();
+	return flase;
+}else{
+return true;
+}
+
+}	
+
+
+</script>
+#order{
+width:586px;
+margin: 0 0 0 20px;
+padding: 0px;
+float: right; 
+
+}
+
+#order_title{
+width: 566px;
+margin: 0 0 5 0px
+padding:  0px;
+
+}
+#order_tile img{
+width: 265px;
+height: 35px;
+
+}
+#order_ad{
+width: 586px;
+padding: 0px;
+margin: 0 0 0 8px;
+float: right;
+
+}
+#order_ad img{
+width: 583px;
+height: 80px;
+border: 1px solid #f1f1f1;
+
+}
+#order_form{
+width: 566px;
+margin: 5 0 0 0px;
+padding: 0px;
+float: right;
+
+
+}
+.label{
+height:25px;
+width:130px;
+text-align:right;
+font-family: "宋体";
+font-size: 12px;
+line-height: 180%;
+font-weight: bold;
+
+}
+.element{
+
+	width: 455px;
+}
+table{
+width: 100%
+
+}
+
+
+ 
+
+
+</head>
+<body>
+<div  id="order">
+    <div  id="order_title"><!--使用内联样式覆盖父div的居右浮动设置    -->	
+<img src="111" style="float:left;">
+</div>
+
+<div id="order_ad">
+<img src="222">
+	
+</div>
+<div  id="order_form"> <!--提交表单时首先执行check（）脚本函数，校检表单数据是否有效  -->
+<form  action="" onSubmit="  return check()">
+<table>
+	<tr>
+		<td  class="label">订购产品：</td>
+		<td class="element">
+			<input  name="product" id="product" size="26" maxlength="36">
+		</td>
+
+	</tr>
+
+<tr>
+		<td  class="label">订购数量：</td>
+		<td class="element">
+			<input  name="account" id="account" size="6" maxlength="30">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">订购公司：</td>
+		<td class="element">
+			<input  name="company" id="company" size="30" maxlength="36">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">联系人：</td>
+		<td class="element">
+			<input  name="name" id="name" size="12" maxlength="30">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">联系电话：</td>
+		<td class="element">
+			<input  name="tel" id="tel" size="18" maxlength="">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">联系传真：</td>
+		<td class="element">
+			<input  name="fax" id="fax" size="18" maxlength="36">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">E-mail：</td>
+		<td class="element">
+			<input  name="email" id="email" size="26" maxlength="36">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label" align="top">备注：</td>
+		<td class="element">
+		<textarea  name="message" id="message" cols="45" rows="10">
+			
+		</textarea>
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">&nbsp：</td>
+		<td class="element">
+			<input type="submit" name="cmdOk"  value="提交订单">
+		     <input type="reset" name="cmdReset" value="重写">
+		</td>
+
+	</tr>
+<tr>
+		<td  class="label">订购产品：</td>
+		<td class="element">
+			<input  name="product" id="product" size="26" maxlength="36">
+		</td>
+
+	</tr>
+
+
+
+
+</table>
+	
+
+</form>
+	
+
+
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>select测试</title>
+<script  language="javascript" type="text/javascript" >
+
+
+//函数功能：初始化并创建选项
+/*html中 DOM add()用法：
+add()用于向<select>中添加一个<option>元素
+语法：
+selectObject.add(option,before);
+参数描述：
+option 必需
+要添加的元素必须是option或optgroup元素
+before必需，
+在选项数组的该元素之前添加新的元素，
+如果该参数是null,元素添加到选项数组的末尾
+*/
+function init(){
+for(i=1;i<=10;i++){
+var y=document.createElement("option");//功能：创建一个select类型的选项
+y.text='选项'+i;
+var x=document.getElementById("m");//功能：获取select整体，利用x向里面添加值
+m.add(y,null);
+}
+}
+
+
+
+//函数功能：移动单个元素
+/*
+具体的实现过程：
+1.获取当前select选中的option的索引号（若是没有被选中，显示，并返回）
+2.另一个select表的length++，并将选中的m[ i ]的值赋值给n[length];【这里的赋值包括名字和属性值赋值】
+3.从n中移去选中的值
+*/
+function move(m,n){
+var index=m.selectedIndex;
+/*selectedindex用法：
+selectedindex用来设置或者返回下拉列表中被选中的选项的索引号
+*/
+if(index==-1){
+alert("您没有选中值！");
+return;
+}
+n.length++;
+//n.options[n.length-1].value=m.options[index].value;//将m中选中的项的值赋值给n中相应位置的数值
+n.options[n.length-1].text=m.options[index].value; //m中当前选中的值赋给n的最后一个元素
+m.remove(index);//从m中删除除当前元素
+}
+
+/*
+具体的实现过程：
+1.判断要移动的表内的你内容是否为空
+2.不为空，获取长度，【注意】
+3.循环，将选中select中的选项一个个的移动到另一个表的末尾
+4.清空选中的表
+*/
+
+function moveAll(m,n){
+if(m.length==0){
+alert("没有可以选择的选项！");
+return;
+}
+n.length=n.length+m.length;
+
+for(var i=0;i<m.length;i++){
+//n.options[n.length-m.length+i].value=m.options[i].value;
+n.options[n.length - m.length + i].text = m.options[i].text;
+}
+m.length = 0;
+}
+</script>
+</head>
+<body  onload="init()">
+<table>
+<tr><td>
+<select  id="m" size=10 style="width:150 ;font-size:25px;"></select></td>
+<td>
+<input type="button" name="moveToRight" value=">"  onClick="move(m,n)"> <br>
+<input type="button" name="moveToAllRight" value=">>" onClick="moveAll(m,n)" ><br>
+ <input type="button" name="moveToLeft" value="<" onClick="move(n,m)"> <br>
+ <input type="button" name="moveAllToLeft" value="<<" onClick="moveAll(n,m)"></td>
+<td><select id="n" name="n" size=10 style="width:150;font-size:25px;"></select></td></tr>
+</table>
+
+</body>
+</html>

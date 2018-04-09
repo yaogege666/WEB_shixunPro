@@ -1,0 +1,26 @@
+section ul{
+	list-style:none;
+	width:200px;
+	float:left;
+}
+section ul li{
+	margin-top:15px;
+}
+section ul li a{
+	line-height:20px;
+}
+section ul li span{
+	color: #FF2832;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Microsoft Yahei"
+}
+section ul li a{
+	color: #646464;
+	padding: 0px 10px;
+	background: transparent url("../images/a.png") no-repeat scroll left -30px;
+	display: inline-block;
+	margin-left: -1px;
+	text-decoration:none;
+	font-size:12px;
+}

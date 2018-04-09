@@ -1,0 +1,276 @@
+
+/*主体*/
+.w-bg{
+	width:1100px;
+	background: url(../images/w-bg.png); 
+	margin: 0 auto;
+	height: 765px;
+}
+.head{
+	position: relative;
+	margin-top: 10px;
+}
+.head .head-left{
+	float: left;
+}
+.head .head-right{
+	float: right;
+	/* 头部右边的小阴影 */
+	background: url(../images/r-top.png) no-repeat 21px 0;
+}
+.nav{
+	position: relative;
+}
+.nav .logo{
+	float: left;
+}
+.nav-right{
+	float: left;
+	width: 750px;
+	height: 56px;
+	border-radius: 5px;
+	background: url(../images/logo-bg.png) repeat-x;
+}
+.nav-right ul{
+	position: relative;
+	margin-left: 80px;
+	margin-top: 10px;
+}
+.nav-right ul li{
+	float: left;
+	width: 92px;
+	height: 21px;
+	text-align: center;
+}
+.nav-right ul li a{
+	color: white;
+	text-align: center;
+}
+.nav-right li a:hover{
+	color: red;
+}
+/* 左边 */
+.left{
+	float: left;
+}
+/*日历*/
+.left .calendar{
+	margin-top: 25px;
+	width: 250px;
+	height: 220px;
+}
+.left .calendar h2{
+	background: url(../images/dot2.png) no-repeat -2px 4px; 
+	padding-left: 15px;
+	color: #004790;
+	height: 18px;
+	font-size: 16px;
+}
+.left .calendar img{
+	margin-top: 5px;
+	margin-left: 20px;
+}
+/* 信息快速搜索 */
+.left .search h2{
+	background: url(../images/dot2.png) no-repeat -2px 4px; 
+	padding-left: 15px;
+	color: #004790;
+	height: 18px;
+	font-size: 16px;
+}
+.left .search form{
+	width: 240px;
+	height: 110px;
+	background: #F9F9F9;
+	padding-top: 15px;
+	margin-bottom: 50px;
+	box-shadow: 5px 5px #C2C2C2;
+
+}
+.left .search .up{
+	padding-left: 12px;
+	color: #000000;
+	font-size: 14px;
+}
+.up input{
+	border: 1px solid gray;
+	height: 20px;
+}
+.left .search select{
+	margin-top: 5px;
+	height: 20px;
+	width: 100px;
+}
+.left .search .type{
+	margin-top: 15px;
+	margin-left: 6px;
+}
+.left .search .type li{
+	float: left;
+	margin-left: 6px;
+}
+.type .sousuo{
+	padding: 6px 8px;
+	margin-left: 10px;
+}
+
+
+/* 右边 */
+.iframe{
+	border:0;
+	float:left;
+	margin-left:280px;
+	margin-top:-430px;
+}
+.right{
+	float: left;
+	margin-top: 20px;
+	width: 720px;
+}
+.right .up h3{
+	background: url(../images/dot2.png) no-repeat -2px 4px; 
+	padding-left: 15px;
+	color: #004790;
+	height: 18px;
+	font-size: 16px;
+}
+.right .up h3 span{
+	font-weight: 400; 
+}
+.right .list{
+	padding-top: 5px;
+	height: 120px;
+	background: #FAFCF5;
+	margin-top: 5px;
+
+}
+.right  .list li{
+	float: left;
+	width: 350px;
+	padding: 4px 2px;
+	font-size: 14px;
+}
+.right .list span{
+	font-weight: 600;
+	margin-right: 8px;
+	color: black;
+}
+.right  .list a:hover{
+	color: red;
+}
+
+/* 底部 */
+.right .bottom{
+	margin-top: 10px;
+}
+.right .bottom h3{
+	background: url(../images/dot2.png) no-repeat 3px 4px; 
+	padding-left: 20px;
+	color: #004790;
+	height: 18px;
+	font-size: 16px;	
+}
+.right .bottom .bottom2{
+	margin-top: 5px;
+}
+.right .bottom .qiuzhi{
+	width: 356px;
+	border: 1px solid #D3D3D3;
+	height: 200px;
+	position: relative;
+	float: left;
+}
+.right .bottom .qiuzhi h2{
+	background: #00B48F;
+	color: #FFFFED;
+	font-size: 16px;
+	padding-left: 12px;
+	padding-top: 5px;
+}
+.right .bottom .qiuzhi p{
+	margin-top: 60px;
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+}
+.right .bottom .qiuzhi  span{
+	position: absolute;
+	bottom: 0;
+	right: 39px;
+	color: black;
+}
+
+.right .bottom .peixun{
+	width: 356px;
+	border: 1px solid #D3D3D3;
+	height: 200px;
+	position: relative;
+	float: left;
+	margin-left: 2px;
+}
+.right .bottom .peixun h2{
+	background: #00B48F;
+	color: #FFFFED;
+	font-size: 16px;
+	padding-left: 12px;
+	padding-top: 5px;
+}
+.right .bottom .peixun p{
+	margin-top: 60px;
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+}
+.right .bottom .peixun span{
+	position: absolute;
+	bottom: 0;
+	right: 39px;
+	color: black;
+}
+/* 底部 */
+.footer{
+	width: 1100px;
+	height: 50px;
+}
+.footer img{
+	display: block;
+	margin: 5px auto;
+	width: 970px;
+}
+
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+.wrap{
+	height: 700px;
+	background: #fff;
+	width: 970px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+img,input{
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}

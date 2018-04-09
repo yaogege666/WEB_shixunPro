@@ -1,0 +1,28 @@
+当我们点击input框时会有出现蓝色边框，我们可以这样来处理input｛outline:none;｝
+onfocus="if (value =='请输入您的电话号码'){value =''}" onblur="if (value ==''){value='请输入您的电话号码'}"
+相信很多人在写form表单的时候能用到。
+ //修改滚动条样式
+test1::-webkit-scrollbar {
+width: 6px;
+}
+.test1::-webkit-scrollbar-track {
+background-color:#808080;
+-webkit-border-radius: 2em;
+-moz-border-radius: 2em;
+border-radius:2em;
+}
+.test1::-webkit-scrollbar-thumb {
+background-color:#ff4400;
+-webkit-border-radius: 2em;
+-moz-border-radius: 2em;
+border-radius:2em;
+} 
+//网页素装
+html{filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+-webkit-filter: grayscale(1);
+filter: gray;}

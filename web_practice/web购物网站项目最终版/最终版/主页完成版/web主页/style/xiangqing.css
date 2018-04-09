@@ -1,0 +1,547 @@
+html{
+	width:100%;
+}
+body{
+	width:100%;
+	overflow-x:hidden;
+}
+section{
+	width:100%;
+	border-top:3px solid #ff2832;
+	position: relative;
+	bottom: 184px;
+}
+section div.main{
+	width:90%;
+	margin:0 auto;
+}
+section div.main div p{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	position: relative;
+	color: #404040;
+	font-family: SimSun,Arial;
+	font-size: 12px;
+}
+section div.main div.main_title p span.s1{
+	font-size:18px;
+	color:#f60;
+	font-weight: bold;
+}
+section div.main div.main_title p span.s2{
+	color:#898989;
+}
+section div.main div.main_ml{
+	width:100%;
+}
+section div.main div.main_ml div.ml_left{
+	border: 1px solid #E9E9E9;
+	bottom: 10px;
+	width: 188px;
+	overflow: hidden;
+	position: relative;
+}
+section div.main div.main_ml div.ml_left span{
+	height: 30px;
+	line-height: 28px;
+	padding-left: 10px;
+	font-weight: bold;
+	color: #404040;
+	font-size: 12px;
+}
+section div.main div.main_ml div.ml_left ul{
+	list-style: none;
+	width:90%;
+	position: relative;
+	right: 30px;
+}
+section div.main div.main_ml div.ml_left ul li{
+	border-bottom: 1px solid #E9E9E9;
+}
+section div.main div.main_ml div.ml_left ul li div.img{
+	border: 1px solid #E9E9E9;
+	width:56px;
+	margin:10px 0;
+}
+section div.main div.main_ml div.ml_left ul li img{
+	padding:2px;
+}
+section div.main div.main_ml div.ml_left ul li a{
+	text-decoration: none;
+	color: #404040;
+	display: block;
+	height: 38px;
+	line-height: 19px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 102px;
+	word-break: break-all;
+	word-wrap: break-word;
+	font-size:12px;
+	color:#000;
+	margin-left: 60px;
+	margin-top: -65px;
+}
+section div.main div.main_ml div.ml_left ul li a:hover{
+	color:#f60;
+	text-decoration: underline;
+}
+section div.main div.main_ml div.ml_left ul li span{
+	color: #C30;
+	font-family: Arial;
+	font-weight: bold;
+	display: block;
+	margin-left: 50px;
+	margin-top: -10px;
+}
+section div.main div.main_ml div.right{
+	width:990px;
+	margin-left: 210px;
+	margin-top: -480px;
+}
+section div.main div.main_ml div.right div.right_title span{
+	font-size: 16px;
+	line-height: 20px;
+	font-family: SimSun;
+	height: auto !important;
+	min-height: 25px;
+	color:#666;
+	margin-left: 28px;
+	position: relative;
+	top:-20px;
+	font-weight: bold;
+}
+section div.main div.main_ml div.right div.right_title i{
+	height: 18px;
+	display: block;
+	width: 18px;
+	margin-right: 10px;
+	background: url("../images/xp.png");
+	background-position: -152px -220px
+}
+section div.main div.main_ml div.right div.right_main{
+	width:100%;
+}
+section div.main div.main_ml div.right div.right_main div.im{
+	width: 352px;
+	margin-top: 20px;
+	float: left;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im1{
+	border: 1px solid #EAEAEA;
+	position: relative;
+	background-color: #FFF;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2{
+	height:56px;
+	margin-top: 10px;
+	border: 1px solid #dcdcdc;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2 i.i1{
+	border: 1px solid #E6E2DF;
+	display: block;
+	height: 54px;
+	position: relative;
+	text-align: center;
+	bottom: 0px;
+	width: 14px;
+	z-index: 10;
+	background-color: #F8F8F8;
+	cursor: default;
+	display: block;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2 i.i1 span{
+	background: url("../images/xp.png");
+	background-position: -112px 0px;
+	height: 9px;
+	width:5px;
+	display: block;
+	top: 23px;
+	position: relative;
+	margin:0 auto;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2 i.i2{
+	border: 1px solid #E6E2DF;
+	display: block;
+	height: 54px;
+	position: relative;
+	text-align: center;
+	bottom: 0px;
+	width: 14px;
+	z-index: 10;
+	background-color: #F8F8F8;
+	cursor: default;
+	display: block;
+	margin-left: 335px;
+	top: -115px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2 i.i2 span{
+	background: url("../images/xp.png");
+	background-position: -117px 0px;
+	height: 9px;
+	width:5px;
+	display: block;
+	margin:0 auto;
+	top: 23px;
+	position: relative;
+}
+section div.main div.main_ml div.right div.right_main div.im div.im2 img{
+	margin-left: 15px;
+	position: relative;
+	top: -56px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	color: #1A66B3;
+	line-height: 18px;
+	text-align: center;
+	font-family: SimSun,Arial;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page a:hover{
+	text-decoration: underline;	
+}
+section div.main div.main_ml div.right div.right_main div.im div.page span{
+	display: inline-block;
+	background: url("../images/xp.png");
+	position: relative;
+	top: 4px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page span.s1{
+	background-position: 0px 0px;
+	height: 15px;
+	width: 19px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page span.s2{
+	background-position: -34px 0px;
+	height: 18px;
+	width: 16px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.page span.s3{
+	background-position: -51px 0px;
+	height: 14px;
+	width: 16px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare{
+	width: 148px;
+	padding: 0px 0px 16px;
+	line-height: 21px;
+	color: #666;
+	margin-top: 5px;
+	display: inline-block;
+	text-align: left;
+	font-family: SimSun,Arial;
+	font-size: 12px;
+	margin-left: 110px;
+	margin-top: 10px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare a{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: transparent url("../images/share_icon.png") no-repeat scroll;
+	overflow: hidden;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare a.a4{
+	background-position: 0px 0px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare a.a5{
+	background-position: -20px 0px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare a.a6{
+	background-position: -40px 0px;
+}
+section div.main div.main_ml div.right div.right_main div.im div.spare a.a7{
+	background-position: -60px 0px;
+}
+section div.main div.main_ml div.right div.right_main div.p{
+	font-size: 12px;
+	color: #666;
+	font-family: SimSun,Arial;
+	line-height: 32px;
+	border-bottom: 1px dotted #E3E3E3;
+	padding-bottom: 14px;
+	float: right;
+	margin-top: 20px;
+	width: 610px;
+}
+section div.main div.main_ml div.right div.right_main div.p span{
+	font-family: Arial;
+	color: #878787;
+}
+section div.main div.main_ml div.right div.right_main div.p div.p0 span{
+	color: #C30;
+	font-family: Arial;
+}
+section div.main div.main_ml div.right div.right_main div.p div.p2 span{
+	font-size:18px;
+	font-weight:bold;
+}
+section div.main div.main_ml div.right div.right_main div.p div.p4 a{
+	background: url("../images/xp.png");
+	background-position: 0 -20px;
+	display: inline-block;
+	width: 60px;
+	height: 10px;
+}
+section div.main div.main_ml div.right div.right_main div.copy{
+	font-size: 12px;
+	color: #666;
+	font-family: SimSun,Arial;
+	line-height: 32px;
+	border-bottom: 1px dotted #E3E3E3;
+	padding-bottom: 14px;
+	float: right;
+	margin-top: 20px;
+	width: 610px;
+}
+section div.main div.main_ml div.right div.right_main div.copy span{
+	color:#1A66B3;
+}
+section div.main div.main_ml div.right div.zhi{
+	width: 610px;
+	height: 90px;
+	font-size: 12px;
+	color: #666;
+	font-family: SimSun,Arial;
+	margin-bottom: 20px;
+	float: right;
+}
+section div.main div.main_ml div.right div.zhi span{
+	position: relative;
+	top: 50px;
+}
+section div.main div.main_ml div.right div.zhi ul{
+	list-style: none;
+	margin-left: 50px;
+}
+section div.main div.main_ml div.right div.zhi ul li{
+	float: left;
+}
+section div.main div.main_ml div.right div.zhi ul li a{
+	text-decoration: none;
+	color: #404040;
+	font-family: "Microsoft YaHei";
+	font-size: 11px;
+	display: block;
+	height: auto;
+	overflow: hidden;
+	width: 70px;
+	padding: 10px 4px 5px;
+}
+section div.main div.main_ml div.right div.zhi ul li a:hover{
+	color:#1780F6;
+	text-decoration: underline;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z{
+	background: transparent url("../images/xico.png") no-repeat scroll ;
+	display: inline-block;
+	height: 10px;
+	width: 15px;
+	overflow: hidden;
+	margin-left: 10px;
+	position: relative;
+	top: 8px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z1{
+	background-position: 0 -48px;
+	position: relative;
+	right: 6px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z1:hover{
+	background-position: 95% -48px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z2{
+	background-position: 0 0px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z2:hover{
+	background-position: 95% 0;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z3{
+	background-position: 0 -168px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z3:hover{
+	background-position: 95% -168px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z4{
+	background-position: 0 -96px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z4:hover{
+	background-position: 95% -96px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z5{
+	background-position: 0 -72px;
+}
+section div.main div.main_ml div.right div.zhi ul li a.z5:hover{
+	background-position: 95% -72px;
+}
+section div.main div.main_ml div.right div.shop{
+	background-color: #F5F5F5;
+	color: #404040;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	border: 1px solid #E9E9E9;
+	padding: 17px 0px 15px 13px;
+	margin: -1px 0px 9px;
+	width: 610px;
+	height: 66px;
+	float: right;
+}
+section div.main div.main_ml div.right div.shop input{
+	border: 1px solid #AAABAD;
+	font-family: Arial;
+	height: 15px;
+	line-height: 15px;
+	padding: 0px 3px;
+	margin: 0px 10px 0px 3px;
+	width: 20px;
+	background-color: #FFF;
+	text-align: center;
+}
+section div.main div.main_ml div.right div.shop a{
+	text-decoration: none;
+}
+section div.main div.main_ml div.right div.shop div.s0 a{
+	background: transparent url("../images/xp.png") no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	float:left;
+	margin-top:15px;
+}
+section div.main div.main_ml div.right div.shop div.shop2 a{
+	background-position: 0px -902px;
+	height: 36px;
+	width: 146px;
+	margin-right: 11px;
+}
+section div.main div.main_ml div.right div.shop div.shop3 a{
+	background-position: 0px -830px;
+	height: 36px;
+	width: 157px;
+	margin-right: 13px;
+}
+section div.main div.main_ml div.right div.shop div.shop4 a{
+	background-position: 0px -1046px;
+	height: 21px;
+	width: 106px;
+	margin: 4px 4px 0px 0px;
+	margin-top:25px;
+}
+section div.main div.main_ml div.right div.shop div.shop5 a{
+	background-position: 0px -220px;
+	height: 21px;
+	margin-top: 4px;
+	width: 80px;
+	margin-top:25px;
+}
+section div.main div.main_ml div.right div.s{
+	float:right;
+	color: #404040;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	position: relative;
+	top: 15px;
+	left: 60px;
+}
+section div.main div.main_ml div.right div.s span{
+	color:#1A66B3;
+}
+section div.main div.main_ml div.main_fo{
+	width:990px;
+	float: right;
+	margin-top: 100px;
+}
+section div.main div.main_ml div.main_fo div.fo_title{
+	height:38px;
+}
+section div.main div.main_ml div.main_fo div.fo_title div.title{
+	float:left;
+}
+section div.main div.main_ml div.main_fo div.fo_title div.title1{
+	background-color: #FFF;
+	border-color: #FC6A15;
+	border-width: 3px 3px 0px;
+	cursor: default;
+	font-weight: bold;
+	height: 35px;
+	line-height: 32px;
+	padding: 0px 12px;
+	border-style: solid;
+}
+section div.main div.main_ml div.main_fo div.fo_title div.title2{
+	background-color: #F5F5F5;
+	border-style: solid;
+	border-color: #DCDDDD;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 1px 1px 0px;
+	color: #404040;
+	display: block;
+	float: left;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0px 13px;
+	position: relative;
+}
+section div.main div.main_ml div.main_fo div.fo_title div.title3{
+	background-color: #F5F5F5;
+	border-style: solid;
+	border-color: #DCDDDD;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 1px 1px 0px;
+	color: #404040;
+	display: block;
+	float: left;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	padding: 0px 13px;
+	position: relative;
+}
+section div.main div.main_ml div.main_fo div.fo_main{
+	border-style: solid;
+	border-color: #E9E9E9;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	border-width: 0px 1px 1px;
+	margin: 0px 0px 20px;
+}
+section div.main div.main_ml div.main_fo div.fo_main div.nav{
+	background-color: #F5F5F5;
+	font-weight: bold;
+	height: 31px;
+	line-height: 31px;
+	margin: 1px;
+	padding-left: 17px;
+	color: #404040;
+	border-top:1px solid #FC6A15;
+}
+section div.main div.main_ml div.main_fo div.fo_main div.page p{
+	line-height: 21px;
+	color: #666;
+    font-family: SimSun,Arial;
+    font-size:12px;
+    padding: 20px;
+    text-indent:2em;
+    margin:10px 0;
+    position: relative;
+	bottom: 10px;
+}
